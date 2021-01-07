@@ -93,13 +93,12 @@
               @foreach($profile_isc as $p)
                 <div class="rq-masonry-item item-width">
                   <a href="{{ url('landing-isc')}}">
-                    <div class="rq-company-single wow fadeIn"
-                      style="background: url('{{asset('storage/'.$p->gambar_prof)}}') top center no-repeat;
-                      background-size: cover;" class="img-circle">
-                      <div class="rq-overlay"></div>
-                      <span class="company-name">{{ $p->nama_prof }}</span>
+                    <div class="rq-company-single wow fadeIn" class="img-circle">
+                      <!-- <div class="rq-overlay"></div> -->
+                      <img src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%; height:100%;" alt="" srcset="">
+                      <!-- <span class="company-name">{{ $p->nama_prof }}</span> -->
                       <!-- <span class="location"><i class="icon_pin"></i>96 Moutain Ave St</span> -->
-                      <span class="company-experties">{{ Str::limit($p->desc_prof, 50)}}</span>
+                      <!-- <span class="company-experties">{{ Str::limit($p->desc_prof, 50)}}</span> -->
                     </div>
                   </a>
                 </div>
@@ -108,13 +107,13 @@
                 @foreach($profile_fiqsi as $p)
                 <div class="rq-masonry-item item-width">
                   <a href="{{ url('landing-fiqsi')}}">
-                    <div class="rq-company-single wow fadeIn"
-                      style="background: url('{{asset('storage/'.$p->gambar_prof)}}') top center no-repeat;
-                      background-size: cover;">
-                      <div class="rq-overlay"></div>
-                      <span class="company-name">{{ $p->nama_prof }}</span>
+                    <div class="rq-company-single wow fadeIn">
+                      <!-- <div class="rq-overlay"></div> -->
+                      
+                      <img src="{{asset('storage/'.$p->gambar_prof)}}"  style="width:100%; height:100%;" alt="" srcset="">
+                      <!-- <span class="company-name">{{ $p->nama_prof }}</span> -->
                       <!-- <span class="location"><i class="icon_pin"></i>96 Moutain Ave St</span> -->
-                      <span class="company-experties">{{ Str::limit($p->desc_prof, 50)}}</span>
+                      <!-- <span class="company-experties">{{ Str::limit($p->desc_prof, 50)}}</span> -->
                     </div>
                   </a>
                 </div>
@@ -122,13 +121,12 @@
                 @foreach($profile_osiris as $p)
                 <div class="rq-masonry-item item-width">
                   <a href="{{ url('landing-osiris')}}l">
-                    <div class="rq-company-single wow fadeIn"
-                      style="background: url('{{asset('storage/'.$p->gambar_prof)}}') top center no-repeat;
-                      background-size: cover;">
-                      <div class="rq-overlay"></div>
-                      <span class="company-name">{{ $p->nama_prof }}</span>
+                    <div class="rq-company-single wow fadeIn">
+                      <!-- <div class="rq-overlay"></div> -->
+                      <img src="{{asset('storage/'.$p->gambar_prof)}}"  style="width:100%; height:100%;" alt="" srcset="">
+                      <!-- <span class="company-name">{{ $p->nama_prof }}</span> -->
                       <!-- <span class="location"><i class="icon_pin"></i>175 Orchard St</span> -->
-                      <span class="company-experties">{{ Str::limit($p->desc_prof, 50)}}</span>
+                      <!-- <span class="company-experties">{{ Str::limit($p->desc_prof, 50)}}</span> -->
                     </div>
                   </a>
                 </div>
@@ -205,7 +203,7 @@
         <div class="container">
           <ul class="rq-footer-social">
             <li><a href="{{$p->wa}}" target="_blank">WhatsApp <i class="fa fa-whatsapp"></i></a></li>
-            <li><a href="{{$p->ig}}" target="_blank">Instagram Antasena <i class="fa fa-instagram"></i></a></li>
+            <li><a href="{{$p->ig}}" target="_blank">Instagram Antasena<i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
       @endforeach
@@ -213,7 +211,7 @@
       <div class="rq-copyright-section">
       @foreach($kontak as $p) 
         <div class="container">
-          <p>Copyright © 2021 <a href="#">Ammanatul Ummah</a>. <i class="fa fa-circle"></i>
+          <p>Copyright © 2021<a href="https://www.mbi-au.sch.id/newmbi/" target="_blank"> Ammanatul Ummah</a>. <i class="fa fa-circle"></i>
             {{$p->alamat}} <i class="fa fa-circle"></i><span>{{ $p->phone}}</span> </p>
 		</div>
 	  @endforeach

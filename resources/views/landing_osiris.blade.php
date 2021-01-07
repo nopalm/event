@@ -141,7 +141,7 @@
       <div class="rq-copyright-section">
       @foreach($kontak as $p) 
         <div class="container">
-          <p>Copyright © 2021 <a href="#">Ammanatul Ummah</a>. <i class="fa fa-circle"></i>
+          <p>Copyright © 2021<a href="https://www.mbi-au.sch.id/newmbi/" target="_blank"> Ammanatul Ummah</a>. <i class="fa fa-circle"></i>
             {{$p->alamat}} <i class="fa fa-circle"></i><span>{{ $p->phone}}</span> </p>
 		</div>
 	  @endforeach
