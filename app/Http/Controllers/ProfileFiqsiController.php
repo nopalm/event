@@ -77,6 +77,8 @@ class ProfileFiqsiController extends Controller
          $about->nama_prof = $request->get('nama_prof');
          $about->desc_prof = $request->get('desc_prof');
          $about->tema_prof = $request->get('tema_prof');
+         $about->ig_prof = $request->get('ig_prof');
+         $about->g_form = $request->get('g_form');
          if($request->file('gambar_prof')){     
              if($about->gambar_prof && file_exists(storage_path('app/public/' . $about->gambar_prof))){         
              \Storage::delete('public/'.$about->gambar_prof);     

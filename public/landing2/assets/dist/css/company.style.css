@@ -20702,7 +20702,7 @@ textarea.comment-input:-ms-input-placeholder {
 .rq-icon-box-single .rq-icon {
   width: 100px;
   height: 100px;
-  background: #cc3333;
+  /* background: #cc3333; */
   border-radius: 50%;
   line-height: 100px;
   -webkit-transition: 0.3s;

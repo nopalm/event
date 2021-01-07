@@ -8,5 +8,5 @@ class ProfileOsiris extends Model
 {
     protected $table = "profile_osiris";
     public $timestamps = false;
-    protected $fillable = ['nama_prof','desc_prof','gambar_prof','tema_prof'];
+    protected $fillable = ['nama_prof','desc_prof','gambar_prof','tema_prof','ig_prof','g_form'];
 }

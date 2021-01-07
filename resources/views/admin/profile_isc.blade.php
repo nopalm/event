@@ -30,6 +30,20 @@
                     <label for="textarea2">Tema</label>
                 </div> 
                 <br>
+                <h4 class="card-title">Instagram ISC</h4>
+                <div class="input-field col s12">
+                    <textarea id="textarea2" name="ig_prof" class="materialize-textarea"
+                        data-length="1000">{{ $p->ig_prof}}</textarea>
+                    <label for="textarea2">Instagram</label>
+                </div> 
+                <br>
+                <h4 class="card-title">Google Form</h4>
+                <div class="input-field col s12">
+                    <textarea id="textarea2" name="g_form" class="materialize-textarea"
+                        data-length="1000">{{ $p->g_form}}</textarea>
+                    <label for="textarea2">Link Google Form</label>
+                </div> 
+                <br>
                 Current Image: <br>     
                 @if($p->gambar_prof)       
                 <img src="{{asset('storage/'.$p->gambar_prof)}}" width="120px" />

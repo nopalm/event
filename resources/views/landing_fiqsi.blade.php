@@ -81,7 +81,7 @@
                           </p>
 						</div>
 
-					 <button type="button" class="rq-btn rq-btn-primary btn-medium border-radius">Daftar<i class="arrow_right"></i></button>
+            <a href="{{$p->g_form}}" target="_blank"> <button type="button" class="rq-btn rq-btn-primary btn-medium border-radius">Daftar<i class="arrow_right"></i></button></a>
                       </div>
                     </div>
               
@@ -102,7 +102,7 @@
 					  <div class="col-md-4 col-sm-4">
                           <div class="rq-icon-box-single">
                             <div class="rq-icon">
-                              <img src="{{asset('storage/'.$p->gambarfiqsi)}}" alt=""/>
+                              <img src="{{asset('storage/'.$p->gambarfiqsi)}}" style="width:95%;" alt=""/>
                             </div>
                             <h5>{{$p->judulfiqsi}}</h5>
                             <p>{{$p->deskripsifiqsi}}</p>
@@ -132,7 +132,9 @@
       <div class="container">
           <ul class="rq-footer-social">
             <li><a href="#">WhatsApp <i class="fa fa-whatsapp"></i></a></li>
-            <li><a href="#">Instagram <i class="fa fa-instagram"></i></a></li>
+            @foreach($profile_fiqsi as $p)
+            <li><a href="{{$p->ig_prof}}" target="_blank">Instagram Fiqsi <i class="fa fa-instagram"></i></a></li>
+          @endforeach
           </ul>
         </div>
       </div> <!-- /.rq-main-footer -->

@@ -204,8 +204,8 @@
       @foreach($kontak as $p) 
         <div class="container">
           <ul class="rq-footer-social">
-            <li><a href="{{$p->wa}}">WhatsApp <i class="fa fa-whatsapp"></i></a></li>
-            <li><a href="{{$p->ig}}">Instagram <i class="fa fa-instagram"></i></a></li>
+            <li><a href="{{$p->wa}}" target="_blank">WhatsApp <i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="{{$p->ig}}" target="_blank">Instagram Antasena <i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
       @endforeach
