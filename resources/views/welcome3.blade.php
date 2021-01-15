@@ -14,7 +14,7 @@
     content="HTML, CSS, JavaScript, Bootstrap, jQuery, Rakon, Themeforest, Template, envato, SASS, SCSS, HTML5, landing page, SaaS Product, SaaS Modern,  MultiPurpose, Crypto, Currency, ICO, Hosting, Agency, Mobile, App, Interior, Charity" />
   <meta name="author" content="Rakon - Creative Multi-Purpose HTML5 Templates" />
 
-  <title>Agency Digital - Creative Multi-Purpose HTML5 Templates</title>
+  <title>Antasena</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="{{  asset('landing2/assets/logo.png')}}" type="image/x-icon" />
   <!-- Bootstrap 4.5 -->
@@ -254,7 +254,7 @@
                 <div class="row">
                   <div class="col-md-6 ml-auto">
                     <div class="item_logo" data-aos="fade-up" data-aos-delay="0">
-                      <img src="{{asset('storage/'.$p->gambarab)}}" />
+                      <img src="{{asset('storage/'.$p->gambarab)}}"  style="max-width:500px;width:100%;"/>
                       <!-- <p class="c-gray">
                         Trusted Rakon Design Agency.
                       </p> -->
@@ -268,91 +268,13 @@
           </div>
         </section>
         <!-- End logos -->
-
-        <!-- Start Services -->
-        <section class="products_section product_demo2 features_hosting service_demo3 margin-t-8"
-          id="Services">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 margin-b-3">
-                <div class="title_sections mb-0">
-                  <div class="before_title">
-                    <span>Who We</span>
-                    <span class="c-blue">Help</span>
-                  </div>
-                  <h2>Specific challenges require specific solutions</h2>
-                  <p>
-                    Some of the industries our digital agency specialises in
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-7 ml-sm-auto">
-                <div class="row">
-                  <div class="col-md-6 item pr-sm-5 mb-3 mb-sm-5">
-                    <div class="item_pro" data-aos="fade-up" data-aos-delay="0">
-                      <div class="icon_t">
-                        <img src="{{ asset('landing/assets/img/icons/Employee.svg')}}" />
-                      </div>
-                      <h3>Employee Owned</h3>
-                      <p>
-                        Being employee-owned keeps us focused on the unique
-                        needs of our users, and we wouldn't have it any other
-                        way.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 item pr-sm-5 mb-3 mb-sm-5">
-                    <div class="item_pro" data-aos="fade-up" data-aos-delay="100">
-                      <div class="icon_t">
-                        <img src="{{ asset('landing/assets/img/icons/Binocular.svg')}}" />
-                      </div>
-                      <h3>Passion for Privacy</h3>
-                      <p>
-                        We believe in everyone's right to privacy, and we back
-                        that with a strong anti-spam policy and free WHOIS
-                        privacy.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 item pr-sm-5 mb-3 mb-sm-5">
-                    <div class="item_pro" data-aos="fade-up" data-aos-delay="200">
-                      <div class="icon_t">
-                        <img src="{{ asset('landing/assets/img/icons/Shield-check.svg')}}" />
-                      </div>
-                      <h3>Commitment to Security</h3>
-                      <p>
-                        Our many security features include Multi Factor
-                        Authentication, auto-enabled sFTP .
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 item pr-sm-5">
-                    <div class="item_pro" data-aos="fade-up" data-aos-delay="300">
-                      <div class="icon_t">
-                        <img src="{{ asset('landing/assets/img/icons/Door-open.svg')}}" />
-                      </div>
-                      <h3>Embrace Open Source</h3>
-                      <p>
-                        We strongly believe in providing open source solutions
-                        to our customers whenever possible.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- .container -->
-        </section>
-        <!-- End. Services -->
-
         <!-- Start Tabs Service -->
         <section class="tabs_works tabs_service margin-b-6">
           <div class="container">
             <div class="row justify-content-center text-center">
               <div class="col-lg-5">
                 <div class="title_sections_inner margin-b-5">
-                  <h2>Box Vertical Style</h2>
+                  <h2>Maskot </h2>
                 </div>
               </div>
             </div>
@@ -391,13 +313,13 @@
                 <div class="tab-content img--tabs slide_bottom" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="v-pills-ss1" role="tabpanel"
                     aria-labelledby="v-pills-ss1-tab">
-                    <img class="--img" src="{{ asset('landing/assets/img/41014.png')}}" alt="" />
+                    <img class="--img" src="{{ asset('landing/isc-maskot.png')}}" style="max-width:500px;width:100%;" alt="" />
                   </div>
                   <div class="tab-pane fade" id="v-pills-ss2" role="tabpanel" aria-labelledby="v-pills-ss2-tab">
-                    <img class="--img" src="{{ asset('landing/assets/img/9701.png')}}" alt="" />
+                    <img class="--img" src="{{ asset('landing/fiqsi-maskot.png')}}" style="max-width:500px;width:100%;" alt="" />
                   </div>
                   <div class="tab-pane fade" id="v-pills-ss3" role="tabpanel" aria-labelledby="v-pills-ss3-tab">
-                    <img class="--img" src="{{ asset('landing/assets/img/features02.png')}}" alt="" />
+                    <img class="--img" src="{{ asset('landing/osiris-maskot.png')}}" style="max-width:500px;width:100%;" alt="" />
                   </div>
                 </div>
               </div>
@@ -700,112 +622,6 @@
         </section>
         <!-- End. Blog -->
 
-        <!-- Start Statistic -->
-        <section class="margin-t-12 section_state" id="Statistic">
-          <!-- particle background -->
-          <div id="particles-js"></div>
-          <div class="container">
-            <div id="triggerBlur"></div>
-            <div class="row justify-content-center text-center">
-              <div class="col-md-5">
-                <div class="title_sections">
-                  <div class="before_title">
-                    <span>Agency</span>
-                    <span class="c-blue">Stats</span>
-                  </div>
-                  <h2>Be up to date with agency stats</h2>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="bb_qgency_state">
-                  <div class="number_state">
-                    <div class="txt">
-                      350 000
-                    </div>
-                  </div>
-                  <div class="blur_item"></div>
-                  <div class="content_state">
-                    <div class="row justify-content-md-center">
-                      <div class="col-md-2">
-                        <div class="it__em">
-                          <div class="icon">
-                            <img src="../../assets/img/icons/1f469.png" />
-                          </div>
-                          <div class="info_txt">
-                            <h4>25 000</h4>
-                            <p>
-                              Followers from all countries of the world
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="it__em">
-                          <div class="icon">
-                            <img src="../../assets/img/icons/2665.png" />
-                          </div>
-                          <div class="info_txt">
-                            <h4>130 000</h4>
-                            <p>
-                              Likes and encouragement
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="it__em">
-                          <div class="icon">
-                            <img src="../../assets/img/icons/1f58c.png" />
-                          </div>
-                          <div class="info_txt">
-                            <h4>7 200</h4>
-                            <p>
-                              Agency designs from 2012
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="it__em">
-                          <div class="icon">
-                            <img src="../../assets/img/icons/1f647-2640.png" />
-                          </div>
-                          <div class="info_txt">
-                            <h4>15 320</h4>
-                            <p>
-                              Discussions and business requests
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="users_profile">
-                    <img src="../../assets/img/persons/02.png" />
-                    <img src="../../assets/img/persons/01.png" />
-                    <img src="../../assets/img/persons/15.png" />
-                    <img src="../../assets/img/persons/04.png" />
-                    <img src="../../assets/img/persons/03.png" />
-                    <img src="../../assets/img/persons/05.png" />
-                    <img src="../../assets/img/persons/16.png" />
-                  </div>
-                  <div class="link_state">
-                    <a href="#" class="btn btn_xl_primary btn_join effect-letter rounded-8 mb-3 mb-sm-0">
-                      Join The Agency</a>
-                    <a href="#" class="btn btn_xl_primary btn_touch rounded-8">
-                      <img src="../../assets/img/icons/1f607.png" />
-                      Get a touch
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End. Statistic -->
-
       </main>
       <!-- end main -->
     </div>
@@ -898,7 +714,7 @@
     </div>
 
     <!-- Tosts -->
-    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+    <!-- <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
       <div class="toast toast_demo" id="myTost" role="alert" aria-live="assertive" aria-atomic="true"
         data-animation="true" data-autohide="false">
         <div class="toast-body">
@@ -909,7 +725,7 @@
           <p>We are glad you joined us <a href="#">Join us</a></p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- End. Toasts -->
 
     <!-- Video Modal -->
