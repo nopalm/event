@@ -253,23 +253,24 @@
               <div class="col-lg-6 ml-auto">
                 <div class="row">
                   <div class="col-md-6 ml-auto">
-                    <div class="item_logo" data-aos="fade-up" data-aos-delay="0.5">
+                    <div class="item_logo" data-aos="fade-up" data-aos-delay="0">
                       <img src="{{asset('storage/'.$p->gambarab)}}" />
                       <!-- <p class="c-gray">
                         Trusted Rakon Design Agency.
                       </p> -->
                     </div>
                   </div>
-            @endforeach
+            
                 </div>
               </div>
+              @endforeach
             </div>
           </div>
         </section>
         <!-- End logos -->
 
         <!-- Start Services -->
-        <section class="products_section product_demo2 features_hosting service_demo3 margin-t-8 padding-t-10"
+        <section class="products_section product_demo2 features_hosting service_demo3 margin-t-8"
           id="Services">
           <div class="container">
             <div class="row">
@@ -345,97 +346,66 @@
         </section>
         <!-- End. Services -->
 
-        <!-- Start Works -->
-        <section class="works_demo2 gng_serv_about padding-t-10" id="Works">
+        <!-- Start Tabs Service -->
+        <section class="tabs_works tabs_service margin-b-6">
           <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="title_sections">
-                  <div class="before_title">
-                    <span>Clients We</span>
-                    <span class="c-blue">Work For</span>
-                  </div>
-                  <h2>Our Recent Projects.</h2>
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-5">
+                <div class="title_sections_inner margin-b-5">
+                  <h2>Box Vertical Style</h2>
                 </div>
               </div>
             </div>
+            <!-- Start Tabs -->
             <div class="row">
-              <div class="col-lg-8">
-                <a href="#" class="item_ig item_mywork">
-                  <div class="mg_img">
-                    <img class="item_pic" src="{{ asset('landing/assets/img/agency/0321.png')}}" />
-                  </div>
-                  <div class="info_work">
-                    <h4>
-                      Spring Labs — Disrupting How Financial Info Is Shared.
-                    </h4>
+              <div class="col-md-10 col-lg-4">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-ss1-tab" data-toggle="pill" href="#v-pills-ss1" role="tab"
+                    aria-controls="v-pills-ss1" aria-selected="true">
+                    <h4 class="margin-b-2 font-s-18">Manage your portfolio</h4>
                     <p>
-                      Websites & Digital Platforms
+                      Buy and sell popular digital currencies, keep track of
+                      them in the one place.
                     </p>
-                    <div class="link_view">Show Project</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4">
-                <div class="item_ig item_mywork">
-                  <div class="icon_played">
-                    <button type="button" class="btn" data-toggle="modal"
-                      data-src="https://www.youtube.com/embed/VvHoHw5AWTk" data-target="#mdllVideo">
-                      <div class="scale rounded-circle play_video">
-                        <i class="tio play_outlined"></i>
-                      </div>
-                    </button>
-                  </div>
-                  <a href="#" class="d-block">
-                    <div class="mg_img">
-                      <img class="item_pic" src="{{ asset('landing/assets/img/agency/097.png')}}" />
-                    </div>
-                    <div class="info_work">
-                      <h4>Healto — Evolving Healthcare Systems.</h4>
-                      <p>
-                        Websites & Digital Platforms
-                      </p>
-                      <div class="link_view">Show Project</div>
-                    </div>
                   </a>
-
+                  <a class="nav-link" id="v-pills-ss2-tab" data-toggle="pill" href="#v-pills-ss2" role="tab"
+                    aria-controls="v-pills-ss2" aria-selected="false">
+                    <h4 class="margin-b-2 font-s-18">Vault protection</h4>
+                    <p>
+                      For added security, store your funds in a vault with
+                      time delayed withdrawals.
+                    </p>
+                  </a>
+                  <a class="nav-link" id="v-pills-ss3-tab" data-toggle="pill" href="#v-pills-ss3" role="tab"
+                    aria-controls="v-pills-ss3" aria-selected="false">
+                    <h4 class="margin-b-2 font-s-18">Mobile apps</h4>
+                    <p>
+                      Stay on top of the markets with the Coinbase app for
+                      <span class="c-blue">Android</span> or
+                      <span class="c-blue">iOS</span>.
+                    </p>
+                  </a>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <a href="#" class="item_ig item_mywork">
-                  <div class="mg_img">
-                    <video class="item_pic" playsinline muted autoplay loop
-                      src="{{ asset('landing/assets/img/agency/rezz-jamming_2.mp4')}}"></video>
+              <div class="col-md-10 col-lg-7 ml-auto mt-md-auto">
+                <div class="tab-content img--tabs slide_bottom" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-ss1" role="tabpanel"
+                    aria-labelledby="v-pills-ss1-tab">
+                    <img class="--img" src="{{ asset('landing/assets/img/41014.png')}}" alt="" />
                   </div>
-                  <div class="info_work">
-                    <h4>Healto — Evolving Healthcare Systems.</h4>
-                    <p>
-                      Websites & Digital Platforms
-                    </p>
-                    <div class="link_view">Show Project</div>
+                  <div class="tab-pane fade" id="v-pills-ss2" role="tabpanel" aria-labelledby="v-pills-ss2-tab">
+                    <img class="--img" src="{{ asset('landing/assets/img/9701.png')}}" alt="" />
                   </div>
-                </a>
-              </div>
-              <div class="col-lg-8">
-                <a href="#" class="item_ig item_mywork">
-                  <div class="mg_img">
-                    <img class="item_pic" src="{{ asset('landing/assets/img/agency/78970654.png')}}" />
+                  <div class="tab-pane fade" id="v-pills-ss3" role="tabpanel" aria-labelledby="v-pills-ss3-tab">
+                    <img class="--img" src="{{ asset('landing/assets/img/features02.png')}}" alt="" />
                   </div>
-                  <div class="info_work">
-                    <h4>
-                      Spring Labs — Disrupting How Financial Info Is Shared.
-                    </h4>
-                    <p>
-                      Websites & Digital Platforms
-                    </p>
-                    <div class="link_view">Show Project</div>
-                  </div>
-                </a>
+                </div>
               </div>
             </div>
+            <!-- End Tabs -->
           </div>
         </section>
-        <!-- End. works -->
+        <!-- End. Tabs Service -->
 
         <!-- Start Testimonial -->
         <section class="testimonial_demo2 padding-t-12">
