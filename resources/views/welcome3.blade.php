@@ -1,231 +1,1026 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="icon" href="{{ asset('landing2/assets/loader.gif')}}"> -->
-    <link rel="icon" type="image/png" href="{{ asset('landing2/assets/logo.png')}}" sizes="192x192">
-    <title>Antasena</title>
-    <!-- Main style -->
-    <link rel="stylesheet" href="{{ asset('landing2/assets/dist/css/company.style.css')}}">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Welcome to Rakon Multi-Purpose HTML5 Templates RTL Supported, built with HTML, JS, SASS, CSS3 and jQuery, RTL Supported, Easy User Experience and Responsive to all devices" />
+  <meta name="keywords"
+    content="HTML, CSS, JavaScript, Bootstrap, jQuery, Rakon, Themeforest, Template, envato, SASS, SCSS, HTML5, landing page, SaaS Product, SaaS Modern,  MultiPurpose, Crypto, Currency, ICO, Hosting, Agency, Mobile, App, Interior, Charity" />
+  <meta name="author" content="Rakon - Creative Multi-Purpose HTML5 Templates" />
+
+  <title>Agency Digital - Creative Multi-Purpose HTML5 Templates</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="{{  asset('landing2/assets/logo.png')}}" type="image/x-icon" />
+  <!-- Bootstrap 4.5 -->
+  <link rel="stylesheet" href="{{ asset('landing/assets/css/bootstrap.min.css')}}" type="text/css" />
+  <!-- animate -->
+  <link rel="stylesheet" href="{{ asset('landing/assets/css/animate.css')}}" type="text/css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="{{ asset('landing/assets/css/swiper.min.css')}}" />
+  <!-- icons -->
+  <link rel="stylesheet" href="{{ asset('landing/assets/css/icons.css')}}" type="text/css" />
+  <!-- aos -->
+  <link rel="stylesheet" href="{{ asset('landing/assets/css/aos.css')}}" type="text/css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="{{ asset('landing/assets/css/main.css')}}" type="text/css" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="{{ asset('landing/assets/css/normalize.css')}}" type="text/css" />
+
+  <!-- js for Brwoser -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div id="rq-page-loading">
-      <div class="rq-loading-icon"><i class="ion-load-c"></i></div>
-    </div>
-    <div id="main-wrapper">
-    @foreach($ab as $p)
-      <header class="header home-header"
-        style="background: url('{{asset('storage/'.$p->gambarab)}}') top center no-repeat; background-size: cover;">
-        <div class="header-overlay"></div>
-        <div class="headroom-sticky home-page-menu">
-          <nav class="navbar navbar-default navbar-home">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./"><img src="{{ asset('landing2/assets/logo.png')}}" style="width:30%;" alt=""/></a>
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="content">
+      <!-- Start header -->
+      <header class="header-nav-center active-blue" id="myNavbar">
+        <div class="container">
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
+            <a class="navbar-brand" href="../../index.html">
+              <img class="logo" src="{{ asset('landing/assets/img/logo.svg')}}" alt="logo" />
+            </a>
+
+            <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <svg viewBox="0 0 64 48">
+                <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+              </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="./">Home</a>
+                </li>  
+                <li class="nav-item dropdown dropdown-hover">
+                  <a class="nav-link dropdown-toggle dropdown_menu" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Event
+
+                    <div class="icon_arrow">
+                      <i class="tio chevron_right"></i>
+                    </div>
+
+                  </a>
+                  <div class="dropdown-menu single-drop sm_dropdown" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown_menu_nav">
+
+                      <li class="dropdown-submenu dropdown-hover"><a
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          ISC
+                        </a>
+                      </li>
+
+                      <li class="dropdown-submenu dropdown-hover"><a
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          Fiqsi
+                        </a>
+                      </li>
+
+                      <li class="dropdown-submenu dropdown-hover"><a
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          Osiris
+                        </a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Services">Registrasi</a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover">
+                  <a class="nav-link dropdown-toggle dropdown_menu" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Informasi
+
+                    <div class="icon_arrow">
+                      <i class="tio chevron_right"></i>
+                    </div>
+
+                  </a>
+                  <div class="dropdown-menu single-drop sm_dropdown" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown_menu_nav">
+
+                      <li class="dropdown-submenu dropdown-hover"><a
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          Galeri Foto
+                        </a>
+                      </li>
+
+                      <li class="dropdown-submenu dropdown-hover"><a
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          Dokumen
+                        </a>
+                      </li>
+
+                      <li class="dropdown-submenu dropdown-hover"><a
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          Jadwal
+                        </a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </li>
+              </ul>
+              <div class="nav_account btn_demo2">
+                <a href="#" class="btn btn_sm_primary effect-letter rounded-8">
+                  Contact
+                </a>
               </div>
-
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="./" >Home</a></li>
-                  <li class=""><a href="{{ url('landing-isc')}}" >isc</a></li>
-                  <li class=""><a href="{{ url('landing-fiqsi')}}" >FIQSI</a></li>
-                  <li class=""><a href="{{ url('landing-osiris')}}" >OSIRIS</a></li>
-
-                  <!-- <li class="login-register-link"><a href="registration.html">
-                      <i class="icon_lock-open_alt"></i>Login or Register</a>
-                  </li> -->
-                </ul>
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+            </div>
           </nav>
+          <!-- End Navbar -->
         </div>
+        <!-- end container -->
+      </header>
+      <!-- End header -->
 
-      
-        <div class="header-body">
+      <!-- Stat main -->
+      <main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <!-- Start Banner Section -->
+        <section class="demo_1 banner_section banner_demo7">
+        @foreach($ab as $p)
           <div class="container">
-            <h1 class="wow fadeInUp">{{ $p->judulab }}</h1>
-            <p class="wow fadeInUp">{{ $p->tema }}</p>
-            <p class="wow fadeInUp">{{ $p->tanggal }}</p>
-          </div>
-        </div> <!-- /.header-body -->
-        @endforeach
-      </header> <!-- end header -->
-
-      @foreach($ab as $p)
-      <div class="rq-page-content">
-        <div class="rq-content-block gray-bg">
-          <div class="container">
-            <div class="rq-title-container text-center wow fadeIn">
-              <h2 class="rq-title">{{ $p->judulab }} </h2>
-              <p class="rq-subtitle">{{ $p->deskripsiab }}</p>
+            <div class="row">
+              <div class="col-md-5 my-auto">
+                <div class="banner_title">
+                  <h1>{{ $p->judulab }}</h1>
+                  <h2>
+                  {{ $p->tema }}
+                  </h2>
+                  <h3>{{ $p->tanggal }}</h3>
+                  <!-- <a href="#" class="btn btn_md_primary effect-letter rounded-8 bg-blue c-white">Discover</a> -->
+                </div>
+              </div>
+              <div class="col-md-7">
+                <img class="ill_05" src="{{ asset('landing/assets/img/agency/girl.svg')}}" />
+              </div>
             </div>
           </div>
-        </div>
         @endforeach
-        <!-- /.rq-content-block category -->
+        </section>
+        <!-- End Banner -->
 
-        <div class="rq-content-block">
+        <!-- Start About -->
+        <section class="abo_company">
           <div class="container">
-            <div class="rq-title-container text-center wow fadeIn">
-              <!-- <h2 class="rq-title">Explore some companies in your area</h2>
-              <p class="rq-subtitle">Here listing some companies that maybe you want to see</p> -->
+          
+            <div class="row">
+            @foreach($profile_isc as $p)
+            <div class="col-lg-4 emo mb-4 mb-lg-0">
+                <div class="gq_item ill_item" style="background-color:#ffe9e9;">
+                  <!-- <span class="d-block c-dark font-s-16">ISC</span> -->
+                  <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" />
+                  <div class="title_sections">
+                    <h2 class="c-dark">{{ $p->nama_prof }}</h2>
+                    <p class="c-gray">
+                    {{ $p->tema_prof }}
+                    </p>
+                  </div>
+                </div>
+              </div>  
+            @endforeach
+
+            @foreach($profile_fiqsi as $p)  
+              <div class="col-lg-4 emo mb-4 mb-lg-0">
+                <div class="gq_item ill_item">
+                  <!-- <span class="d-block c-dark font-s-16">AMC Networks</span> -->
+                  <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" />
+                  <div class="title_sections">
+                    <h2 class="c-dark">{{ $p->nama_prof }}</h2>
+                    <p class="c-gray">
+                    {{ $p->tema_prof }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              @endforeach
+
+              @foreach($profile_osiris as $p) 
+              <div class="col-lg-4 emo">
+                <div class="gq_item ill_item">
+                  <!-- <span class="d-block c-dark font-s-16">Musicfolio</span> -->
+                  <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" />
+                  <div class="title_sections">
+                    <h2 class="c-dark">{{ $p->nama_prof }}</h2>
+                    <p class="c-gray">
+                    {{ $p->tema_prof }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              @endforeach
+            </div>
+          </div>
+        </section>
+        <!-- End. About -->
+
+        <!-- Start logos -->
+        <section class="logos_section logos_demo2 padding-t-10">
+          <div class="container">
+            <div class="row">
+            @foreach($ab as $p)
+              <div class="col-lg-6 ml-auto">
+                <div class="title_sections mb-0">
+                  <h2>
+                  {{ $p->judulab }}
+                  </h2>
+                  <p>{{ $p->deskripsiab }}
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6 ml-auto">
+                <div class="row">
+                  <div class="col-md-6 ml-auto">
+                    <div class="item_logo" data-aos="fade-up" data-aos-delay="0.5">
+                      <img src="{{asset('storage/'.$p->gambarab)}}" />
+                      <!-- <p class="c-gray">
+                        Trusted Rakon Design Agency.
+                      </p> -->
+                    </div>
+                  </div>
+            @endforeach
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End logos -->
+
+        <!-- Start Services -->
+        <section class="products_section product_demo2 features_hosting service_demo3 margin-t-8 padding-t-10"
+          id="Services">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 margin-b-3">
+                <div class="title_sections mb-0">
+                  <div class="before_title">
+                    <span>Who We</span>
+                    <span class="c-blue">Help</span>
+                  </div>
+                  <h2>Specific challenges require specific solutions</h2>
+                  <p>
+                    Some of the industries our digital agency specialises in
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-7 ml-sm-auto">
+                <div class="row">
+                  <div class="col-md-6 item pr-sm-5 mb-3 mb-sm-5">
+                    <div class="item_pro" data-aos="fade-up" data-aos-delay="0">
+                      <div class="icon_t">
+                        <img src="{{ asset('landing/assets/img/icons/Employee.svg')}}" />
+                      </div>
+                      <h3>Employee Owned</h3>
+                      <p>
+                        Being employee-owned keeps us focused on the unique
+                        needs of our users, and we wouldn't have it any other
+                        way.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 item pr-sm-5 mb-3 mb-sm-5">
+                    <div class="item_pro" data-aos="fade-up" data-aos-delay="100">
+                      <div class="icon_t">
+                        <img src="{{ asset('landing/assets/img/icons/Binocular.svg')}}" />
+                      </div>
+                      <h3>Passion for Privacy</h3>
+                      <p>
+                        We believe in everyone's right to privacy, and we back
+                        that with a strong anti-spam policy and free WHOIS
+                        privacy.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 item pr-sm-5 mb-3 mb-sm-5">
+                    <div class="item_pro" data-aos="fade-up" data-aos-delay="200">
+                      <div class="icon_t">
+                        <img src="{{ asset('landing/assets/img/icons/Shield-check.svg')}}" />
+                      </div>
+                      <h3>Commitment to Security</h3>
+                      <p>
+                        Our many security features include Multi Factor
+                        Authentication, auto-enabled sFTP .
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 item pr-sm-5">
+                    <div class="item_pro" data-aos="fade-up" data-aos-delay="300">
+                      <div class="icon_t">
+                        <img src="{{ asset('landing/assets/img/icons/Door-open.svg')}}" />
+                      </div>
+                      <h3>Embrace Open Source</h3>
+                      <p>
+                        We strongly believe in providing open source solutions
+                        to our customers whenever possible.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .container -->
+        </section>
+        <!-- End. Services -->
+
+        <!-- Start Works -->
+        <section class="works_demo2 gng_serv_about padding-t-10" id="Works">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="title_sections">
+                  <div class="before_title">
+                    <span>Clients We</span>
+                    <span class="c-blue">Work For</span>
+                  </div>
+                  <h2>Our Recent Projects.</h2>
+                </div>
+              </div>
             </div>
             <div class="row">
-              <div class="rq-explore-company masonry-wrapper">
-                
-              @foreach($profile_isc as $p)
-                <div class="rq-masonry-item item-width">
-                  <a href="{{ url('landing-isc')}}">
-                    <div class="rq-company-single wow fadeIn" class="img-circle">
-                      <!-- <div class="rq-overlay"></div> -->
-                      <img src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%; height:100%;" alt="" srcset="">
-                      <!-- <span class="company-name">{{ $p->nama_prof }}</span> -->
-                      <!-- <span class="location"><i class="icon_pin"></i>96 Moutain Ave St</span> -->
-                      <!-- <span class="company-experties">{{ Str::limit($p->desc_prof, 50)}}</span> -->
+              <div class="col-lg-8">
+                <a href="#" class="item_ig item_mywork">
+                  <div class="mg_img">
+                    <img class="item_pic" src="{{ asset('landing/assets/img/agency/0321.png')}}" />
+                  </div>
+                  <div class="info_work">
+                    <h4>
+                      Spring Labs — Disrupting How Financial Info Is Shared.
+                    </h4>
+                    <p>
+                      Websites & Digital Platforms
+                    </p>
+                    <div class="link_view">Show Project</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4">
+                <div class="item_ig item_mywork">
+                  <div class="icon_played">
+                    <button type="button" class="btn" data-toggle="modal"
+                      data-src="https://www.youtube.com/embed/VvHoHw5AWTk" data-target="#mdllVideo">
+                      <div class="scale rounded-circle play_video">
+                        <i class="tio play_outlined"></i>
+                      </div>
+                    </button>
+                  </div>
+                  <a href="#" class="d-block">
+                    <div class="mg_img">
+                      <img class="item_pic" src="{{ asset('landing/assets/img/agency/097.png')}}" />
+                    </div>
+                    <div class="info_work">
+                      <h4>Healto — Evolving Healthcare Systems.</h4>
+                      <p>
+                        Websites & Digital Platforms
+                      </p>
+                      <div class="link_view">Show Project</div>
                     </div>
                   </a>
-                </div>
-                @endforeach
 
-                @foreach($profile_fiqsi as $p)
-                <div class="rq-masonry-item item-width">
-                  <a href="{{ url('landing-fiqsi')}}">
-                    <div class="rq-company-single wow fadeIn">
-                      <!-- <div class="rq-overlay"></div> -->
-                      
-                      <img src="{{asset('storage/'.$p->gambar_prof)}}"  style="width:100%; height:100%;" alt="" srcset="">
-                      <!-- <span class="company-name">{{ $p->nama_prof }}</span> -->
-                      <!-- <span class="location"><i class="icon_pin"></i>96 Moutain Ave St</span> -->
-                      <!-- <span class="company-experties">{{ Str::limit($p->desc_prof, 50)}}</span> -->
-                    </div>
-                  </a>
-                </div>
-                @endforeach
-                @foreach($profile_osiris as $p)
-                <div class="rq-masonry-item item-width">
-                  <a href="{{ url('landing-osiris')}}l">
-                    <div class="rq-company-single wow fadeIn">
-                      <!-- <div class="rq-overlay"></div> -->
-                      <img src="{{asset('storage/'.$p->gambar_prof)}}"  style="width:100%; height:100%;" alt="" srcset="">
-                      <!-- <span class="company-name">{{ $p->nama_prof }}</span> -->
-                      <!-- <span class="location"><i class="icon_pin"></i>175 Orchard St</span> -->
-                      <!-- <span class="company-experties">{{ Str::limit($p->desc_prof, 50)}}</span> -->
-                    </div>
-                  </a>
                 </div>
               </div>
-              @endforeach
-              <!-- /.rq-explore-company -->
-              <!-- <div class="rq-view-more">
-                <a href="#">View All Companies</a>
-              </div> -->
-              
-           <div>
-            <img src="{{ asset('landing2/assets/New_Project.png')}}" class="img-responsive">
-          </div>
-            </div>
-          </div>
-        </div> <!-- /.rq-content-block feature company -->
-
-        <!-- <div class="rq-content with-bg-img  wow fadeIn">
-          <div class="rq-block-overlay"></div>
-          <div class="container">
-            <div class="rq-title-container text-center" >
-             
-            </div>
-           <div>
-             <img src="../company/New Project.png" class="img-responsive">
-           </div>
-          </div>
-        </div> -->
-         <!-- /.rq-content-block feature company -->
-
-        <div class="rq-content-block wow fadeIn" data-wow-delay=".1s">
-          <div class="container">
-            <div class="rq-title-container text-center">
-              <h2 class="rq-title">Media Partner</h2>
-              <!-- <p class="rq-subtitle">Browse the latest articles from our blog.</p> -->
-            </div>
-            <div class="rq-interested-category">
-              <div class="row">
-              @foreach($partner as $p)
-                <div class="col-md-3 col-sm-4">
-                  <a href="listing-plain-heading.html">
-                    <div class="rq-category-single wow fadeIn">
-                      <img src="{{asset('storage/'.$p->gambarpart)}}" style="width:50%;">
-                      <div class="rq-overlay"></div>
-                      <span>{{ $p->name }}</span>
-                    </div>
-                  </a>
-                </div>
-              @endforeach
+              <div class="col-lg-4">
+                <a href="#" class="item_ig item_mywork">
+                  <div class="mg_img">
+                    <video class="item_pic" playsinline muted autoplay loop
+                      src="{{ asset('landing/assets/img/agency/rezz-jamming_2.mp4')}}"></video>
+                  </div>
+                  <div class="info_work">
+                    <h4>Healto — Evolving Healthcare Systems.</h4>
+                    <p>
+                      Websites & Digital Platforms
+                    </p>
+                    <div class="link_view">Show Project</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-8">
+                <a href="#" class="item_ig item_mywork">
+                  <div class="mg_img">
+                    <img class="item_pic" src="{{ asset('landing/assets/img/agency/78970654.png')}}" />
+                  </div>
+                  <div class="info_work">
+                    <h4>
+                      Spring Labs — Disrupting How Financial Info Is Shared.
+                    </h4>
+                    <p>
+                      Websites & Digital Platforms
+                    </p>
+                    <div class="link_view">Show Project</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-        </div> <!-- /.rq-content-block home blog -->
+        </section>
+        <!-- End. works -->
 
-        <div class="rq-partners-section">
+        <!-- Start Testimonial -->
+        <section class="testimonial_demo2 padding-t-12">
           <div class="container">
-            <h3 class="meta" style="color: black;">Sponsored</h3>
-            <!-- <h2 class="rq-title">Sponsored</h2> -->
-            <div class="partners-wrapper">
-            @foreach($sponsor as $p)
-              <div class="item">
-                <div class="partner-single"><img src="{{asset('storage/'.$p->gambarspon)}}" style="width:50%;" alt="{{ $p->judulspon}}"></div>
+            <div class="row justify-content-between">
+              <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="item_mmon">
+                  <div class="profile_user">
+                    <img src="{{ asset('landing/assets/img/persons/14.png')}}" />
+                    <div class="categ">
+                      <span>Project Manager</span>
+                    </div>
+                  </div>
+                  <div class="info_persons">
+                    <p>
+                      "Mobiteam created our full Visual Brand Identity and our
+                      online store. We worked together on this project for 4
+                      months and I have exclusively positive feedback. We were
+                      far from IT and development."
+                    </p>
+                    <h5>Tommy Reaves</h5>
+                    <span>Rexona</span>
+                  </div>
+                </div>
               </div>
-            @endforeach
+              <div class="col-lg-5">
+                <div class="item_mmon">
+                  <div class="profile_user">
+                    <img src="{{ asset('landing/assets/img/persons/13.png')}}" />
+                    <div class="categ">
+                      <span>CEO Founder</span>
+                    </div>
+                  </div>
+                  <div class="info_persons">
+                    <p>
+                      "We looked for an ambitious team to join us for this
+                      realization journey. Right from the beginning, we were
+                      impressed how Marcel and his team carefully and
+                      proactively read and commented on our proposal."
+                    </p>
+                    <h5>Lydia James</h5>
+                    <span>orino Stu.</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div> <!-- /.rq-partners-section -->
-      </div> <!-- /.page-content -->
-    </div> <!-- end #main-wrapper -->
+        </section>
+        <!-- End. Testimonial -->
 
-    <footer class="rq-footer">
-      <div class="rq-main-footer">
-      @foreach($kontak as $p) 
-        <div class="container">
-          <ul class="rq-footer-social">
-            <li><a href="{{$p->wa}}" target="_blank">WhatsApp <i class="fa fa-whatsapp"></i></a></li>
-            <li><a href="{{$p->ig}}" target="_blank">Instagram Antasena<i class="fa fa-instagram"></i></a></li>
-          </ul>
+        <!-- hide Header -->
+        <!-- <div id="triggerForm"></div> -->
+        <!-- End. -->
+
+        <!-- Start Services -->
+        <!-- <section class="service_demo4 content_item" id="pinContainer">
+          <div class="Slide_horizontal_scroll">
+            <div class="container">
+              <div id="slideContainer">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="item_slide panel">
+                      <div class="block_img">
+                        <div class="block_item" data-fx="22">
+                          <a class="block__title c-dark" data-img="../../assets/img/agency/xore___solar_system.gif">Branding &
+                            Identity</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="item_slide panel">
+                      <div class="block_img">
+                        <div class="block_item" data-fx="22">
+                          <a class="block__title c-dark" data-img="../../assets/img/agency/notsohotdogdribbble.gif">Websites &
+                            Digital
+                            Platforms</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="item_slide panel">
+                      <div class="block_img">
+                        <div class="block_item" data-fx="22">
+                          <a class="block__title c-dark" data-img="../../assets/img/agency/098401.gif">eCommerce
+                            Experiences</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="item_slide panel">
+                      <div class="block_img">
+                        <div class="block_item" data-fx="22">
+                          <a class="block__title c-dark" data-img="../../assets/img/agency/turtle-power.gif">Performance
+                            Marketing</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="item_slide panel">
+                      <div class="block_img">
+                        <div class="block_item" data-fx="22">
+                          <a class="block__title c-dark" data-img="../../assets/img/agency/5_b.gif">eCommerce
+                            Experiences</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!-- End Services -->
+
+        <!-- Show Header -->
+        <!-- <div id="triggerTo"></div> -->
+        <!-- End. -->
+
+        <!-- Start Agency About -->
+        <section class="about_agency padding-t-12" id="About">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="title_sections mb-0">
+                  <div class="before_title">
+                    <span>Digital Agency</span>
+                    <span class="c-blue">People</span>
+                  </div>
+                  <h2>The brightest minds in digital, at your service 👋</h2>
+                  <p>
+                    Coinbase has a variety of features that make it the best
+                    place to start trading
+                  </p>
+                  <p>
+                    You’re unique. A one-off. A fascinating work in progress.
+                    Your life isn’t off-the-shelf. So should your home be?
+                  </p>
+                  <p>
+                    We say no. It’s why you can change the size, colours and
+                    materials of nearly every design. And we’re here to help
+                    you style your home, your way. And although styling advice
+                    is always free in our stores, this month, you can enjoy
+                    the full in-home experience at no cost.
+                  </p>
+                  <p>
+                    Live a life as individual as you are. Live ekstraordinær.
+                  </p>
+                  <img class="inside_pic" src="{{ asset('landing/assets/img/agency/98701.jpg')}}" />
+                </div>
+              </div>
+              <div class="col-lg-5 ml-auto">
+                <div class="pro_agency">
+                  <img src="{{ asset('landing/assets/img/agency/0976401.jpg')}}" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Edn. Agency About -->
+
+        <!-- strat Blog -->
+        <section class="blog_agency margin-t-5 padding-t-12" id="Blog">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                <div class="title_sections">
+                  <h2>We Write Insightful Stuff</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 mb-3 mb-lg-0 items">
+                <a href="#" class="item_art">
+                  <div class="item_top">
+                    <div class="date_mo">
+                      <h5>31</h5>
+                      <span>Mar</span>
+                    </div>
+                    <div class="item_cai">
+                      <span class="c-red">Popular Posts</span>
+                      <div class="name_pub">By John Smith</div>
+                    </div>
+                  </div>
+                  <img src="../../assets/img/agency/097422.png" />
+                  <div class="ga_info">
+                    <h4>
+                      Should Your Brand ride the Coronavirus Wave to drive
+                      gains?
+                    </h4>
+                    <div class="tags__bottom">
+                      <span>#Google </span>
+                      <span>#Amazon</span>
+                      <span>#Design</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 mb-3 mb-lg-0 items">
+                <a href="#" class="item_art">
+                  <div class="item_top">
+                    <div class="date_mo">
+                      <h5>4</h5>
+                      <span>Jun</span>
+                    </div>
+                    <div class="item_cai">
+                      <span>Design</span>
+                      <div class="name_pub">By John Smith</div>
+                    </div>
+                  </div>
+                  <img src="../../assets/img/agency/654.png" />
+                  <div class="ga_info">
+                    <h4>
+                      Should Your Brand ride the Coronavirus Wave to drive
+                      gains?
+                    </h4>
+                    <div class="tags__bottom">
+                      <span>#Google </span>
+                      <span>#Amazon</span>
+                      <span>#Design</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 mb-3 mb-lg-0 items">
+                <a href="#" class="item_art is_image">
+                  <img src="../../assets/img/agency/09874.png" />
+                </a>
+              </div>
+              <div class="col-lg-4 mb-3 mb-lg-0 items">
+                <a href="#" class="item_art is_image">
+                  <img src="../../assets/img/agency/06541.png" />
+                </a>
+              </div>
+              <div class="col-lg-4 mb-3 mb-lg-0 items">
+                <a href="#" class="item_art">
+                  <div class="item_top">
+                    <div class="date_mo">
+                      <h5>9</h5>
+                      <span>Jun</span>
+                    </div>
+                    <div class="item_cai">
+                      <span>Developer</span>
+                      <div class="name_pub">By John Smith</div>
+                    </div>
+                  </div>
+                  <img src="../../assets/img/agency/0654.png" />
+                  <div class="ga_info">
+                    <h4>
+                      Should Your Brand ride the Coronavirus Wave to drive
+                      gains?
+                    </h4>
+                    <div class="tags__bottom">
+                      <span>#Google </span>
+                      <span>#Amazon</span>
+                      <span>#Design</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 mb-3 mb-lg-0 items">
+                <a href="#" class="item_art">
+                  <div class="item_top">
+                    <div class="date_mo">
+                      <h5>13</h5>
+                      <span>Jun</span>
+                    </div>
+                    <div class="item_cai">
+                      <span>Illustration</span>
+                      <div class="name_pub">By John Smith</div>
+                    </div>
+                  </div>
+                  <img src="../../assets/img/agency/11654.png" />
+                  <div class="ga_info">
+                    <h4>
+                      Should Your Brand ride the Coronavirus Wave to drive
+                      gains?
+                    </h4>
+                    <div class="tags__bottom">
+                      <span>#Google </span>
+                      <span>#Amazon</span>
+                      <span>#Design</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End. Blog -->
+
+        <!-- Start Statistic -->
+        <section class="margin-t-12 section_state" id="Statistic">
+          <!-- particle background -->
+          <div id="particles-js"></div>
+          <div class="container">
+            <div id="triggerBlur"></div>
+            <div class="row justify-content-center text-center">
+              <div class="col-md-5">
+                <div class="title_sections">
+                  <div class="before_title">
+                    <span>Agency</span>
+                    <span class="c-blue">Stats</span>
+                  </div>
+                  <h2>Be up to date with agency stats</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="bb_qgency_state">
+                  <div class="number_state">
+                    <div class="txt">
+                      350 000
+                    </div>
+                  </div>
+                  <div class="blur_item"></div>
+                  <div class="content_state">
+                    <div class="row justify-content-md-center">
+                      <div class="col-md-2">
+                        <div class="it__em">
+                          <div class="icon">
+                            <img src="../../assets/img/icons/1f469.png" />
+                          </div>
+                          <div class="info_txt">
+                            <h4>25 000</h4>
+                            <p>
+                              Followers from all countries of the world
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="it__em">
+                          <div class="icon">
+                            <img src="../../assets/img/icons/2665.png" />
+                          </div>
+                          <div class="info_txt">
+                            <h4>130 000</h4>
+                            <p>
+                              Likes and encouragement
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="it__em">
+                          <div class="icon">
+                            <img src="../../assets/img/icons/1f58c.png" />
+                          </div>
+                          <div class="info_txt">
+                            <h4>7 200</h4>
+                            <p>
+                              Agency designs from 2012
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="it__em">
+                          <div class="icon">
+                            <img src="../../assets/img/icons/1f647-2640.png" />
+                          </div>
+                          <div class="info_txt">
+                            <h4>15 320</h4>
+                            <p>
+                              Discussions and business requests
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="users_profile">
+                    <img src="../../assets/img/persons/02.png" />
+                    <img src="../../assets/img/persons/01.png" />
+                    <img src="../../assets/img/persons/15.png" />
+                    <img src="../../assets/img/persons/04.png" />
+                    <img src="../../assets/img/persons/03.png" />
+                    <img src="../../assets/img/persons/05.png" />
+                    <img src="../../assets/img/persons/16.png" />
+                  </div>
+                  <div class="link_state">
+                    <a href="#" class="btn btn_xl_primary btn_join effect-letter rounded-8 mb-3 mb-sm-0">
+                      Join The Agency</a>
+                    <a href="#" class="btn btn_xl_primary btn_touch rounded-8">
+                      <img src="../../assets/img/icons/1f607.png" />
+                      Get a touch
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End. Statistic -->
+
+      </main>
+      <!-- end main -->
+    </div>
+    <!-- [id] content -->
+
+    <!-- footr -->
+    <footer class="defalut-footer foot_demo3 light margin-t-12 padding-py-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="item_about">
+              <a class="logo" href="agency.html">
+                <img src="../../assets/img/logo.svg" alt="" />
+              </a>
+              <p>
+                Rakon is a simple, elegant, and secure way to build your
+                bitcoin and crypto portfolio.
+              </p>
+              <div class="address">
+                <span>1989 Don Jackson Lane</span>
+                <span>Call us: <a href="tel:8089569599">808-956-9599</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-2">
+            <div class="item_links">
+              <h4>Social</h4>
+              <a class="nav-link" href="">Blog</a>
+              <a class="nav-link" href="">Facebook</a>
+              <a class="nav-link" href="">Twitter</a>
+              <a class="nav-link" href="">Instagram</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-2">
+            <div class="item_links">
+              <h4>Company</h4>
+              <a class="nav-link" href="">About</a>
+              <a class="nav-link" href="">Affiliates</a>
+              <a class="nav-link" href="">Careers</a>
+              <a class="nav-link" href="">Legal & Privacy</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-4 mt-lg-0">
+            <div class="item_subscribe">
+              <h4>Subscribe</h4>
+              <p>
+                Subscribe to get the latest<br />
+                news form us
+              </p>
+              <form class="form-row">
+                <div class="col-md-11 form-group subscribebtn">
+                  <div class="item_input">
+                    <input type="email" class="form-control rounded-8" id="exampleInputEmail1"
+                      placeholder="Enter email address" aria-describedby="emailHelp" />
+                    <button type="button" class="btn ripple_circle scale rounded-8 btn_subscribe">
+                      <i class="tio send"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-      @endforeach
-      </div> <!-- /.rq-main-footer -->
-      <div class="rq-copyright-section">
-      @foreach($kontak as $p) 
-        <div class="container">
-          <p>Copyright © 2021<a href="https://www.mbi-au.sch.id/newmbi/" target="_blank"> Ammanatul Ummah</a>. <i class="fa fa-circle"></i>
-            {{$p->alamat}} <i class="fa fa-circle"></i><span>{{ $p->phone}}</span> </p>
-		</div>
-	  @endforeach
-      </div> <!-- /.rq-copyright-section -->
+        <div class="row">
+          <div class="col-md-6 margin-t-1">
+            <select data-menu>
+              <option>French</option>
+              <option selected>English</option>
+              <option>Arabic</option>
+              <option>Russian</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12 text-center padding-t-4">
+          <div class="copyright">
+            <span>© 2020
+              <a href="https://themeforest.net/user/orinostu" target="_blank">OrinoStu.</a>
+              All Right Reseved</span>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="{{ asset('landing2/assets/dist/js/jquery.min.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('landing2/assets/dist/js/bootstrap.min.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('landing2/assets/dist/js/fitvids.min.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('landing2/assets/dist/js/jquery.flexslider-min.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('landing2/assets/dist/js/masonry.pkgd.min.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('landing2/assets/dist/js/selectize.min.js')}}"></script>
-    <script src="{{ asset('landing2/assets/dist/js/jquery.sticky.js')}}" type="text/javascript"></script>
-    <script src="{{ asset('landing2/assets/dist/js/wow.min.js')}}"></script>
-    <script src="{{ asset('landing2/assets/dist/js/owl-carousel.js')}}"></script>
-    <script src="{{ asset('landing2/assets/dist/js/scripts.js')}}" type="text/javascript"></script>
-  </body>
+    <!-- End. -->
+
+    <!-- Back to top with progress indicator-->
+    <div class="prgoress_indicator">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+
+    <!-- Tosts -->
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+      <div class="toast toast_demo" id="myTost" role="alert" aria-live="assertive" aria-atomic="true"
+        data-animation="true" data-autohide="false">
+        <div class="toast-body">
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <i class="tio clear"></i>
+          </button>
+          <h5>Hi there 👋</h5>
+          <p>We are glad you joined us <a href="#">Join us</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- End. Toasts -->
+
+    <!-- Video Modal -->
+    <div class="modal mdll_video fade" id="mdllVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <!-- Close -->
+      <button type="button" class="close bbt_close ripple_circle" data-dismiss="modal" aria-label="Close">
+        <i class="tio clear"></i>
+      </button>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                allow="autoplay"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Section Loader -->
+    <section class="loading_overlay">
+      <div class="loader_logo">
+        <img class="logo" src="{{ asset('landing/assets/img/logo.svg')}}" />
+      </div>
+    </section>
+    <!-- End. Loader -->
+  </div>
+  <!-- End. wrapper -->
+
+  <!-- jquery -->
+  <script src="{{ asset('landing/assets/js/jquery-3.5.0.js')}}" type="text/javascript"></script>
+  <!-- jquery-migrate -->
+  <script src="{{ asset('landing/assets/js/jquery-migrate.min.js')}}" type="text/javascript"></script>
+  <!-- popper -->
+  <script src="{{ asset('landing/assets/js/popper.min.js')}}" type="text/javascript"></script>
+  <!-- bootstrap -->
+  <script src="{{ asset('landing/assets/js/bootstrap.min.js')}}" type="text/javascript"></script>
+  <!--
+  ============
+  vendor file
+  ============
+   -->
+  <!-- particles -->
+  <script src="{{ asset('landing/assets/js/vendor/particles.min.js')}}" type="text/javascript"></script>
+  <!-- TweenMax -->
+  <script src="{{ asset('landing/assets/js/vendor/TweenMax.min.js')}}" type="text/javascript"></script>
+  <!-- ScrollMagic -->
+  <script src="{{ asset('landing/assets/js/vendor/ScrollMagic.js')}}" type="text/javascript"></script>
+  <!-- animation.gsap -->
+  <script src="{{ asset('landing/assets/js/vendor/animation.gsap.js')}}" type="text/javascript"></script>
+  <!-- addIndicators -->
+  <script src="{{ asset('landing/assets/js/vendor/debug.addIndicators.min.js')}}" type="text/javascript"></script>
+  <!-- Swiper js -->
+  <script src="{{ asset('landing/assets/js/vendor/swiper.min.js')}}" type="text/javascript"></script>
+  <!-- countdown -->
+  <script src="{{ asset('landing/assets/js/vendor/countdown.js')}}" type="text/javascript"></script>
+  <!-- simpleParallax -->
+  <script src="{{ asset('landing/assets/js/vendor/simpleParallax.min.js')}}" type="text/javascript"></script>
+  <!-- waypoints -->
+  <script src="{{ asset('landing/assets/js/vendor/waypoints.min.js')}}" type="text/javascript"></script>
+  <!-- counterup -->
+  <script src="{{ asset('landing/assets/js/vendor/jquery.counterup.min.js')}}" type="text/javascript"></script>
+  <!-- charming -->
+  <script src="{{ asset('landing/assets/js/vendor/charming.min.js')}}" type="text/javascript"></script>
+  <!-- imagesloaded -->
+  <script src="{{ asset('landing/assets/js/vendor/imagesloaded.pkgd.min.js')}}" type="text/javascript"></script>
+  <!-- BX-Slider -->
+  <script src="{{ asset('landing/assets/js/vendor/jquery.bxslider.min.js')}}" type="text/javascript"></script>
+  <!-- Sharer -->
+  <script src="{{ asset('landing/assets/js/vendor/sharer.js')}}" type="text/javascript"></script>
+  <!-- sticky -->
+  <script src="{{ asset('landing/assets/js/vendor/sticky.min.js')}}" type="text/javascript"></script>
+  <!-- Aos -->
+  <script src="{{ asset('landing/assets/js/vendor/aos.js')}}" type="text/javascript"></script>
+  <!-- main file -->
+  <script src="{{ asset('landing/assets/js/main.js')}}" type="text/javascript"></script>
+  <!-- agency -->
+  <script src="{{ asset('landing/assets/js/pages/agency.js')}}" type="text/javascript"></script>
+
+</body>
+
 </html>
