@@ -16,7 +16,7 @@
 
   <title>Antasena</title>
   <!-- favicon -->
-  <link rel="shortcut icon" href="{{  asset('landing2/assets/logo.png')}}" type="image/x-icon" />
+  <link rel="shortcut icon" href="{{  asset('landing/logo antasena.png')}}" type="image/x-icon" />
   <!-- Bootstrap 4.5 -->
   <link rel="stylesheet" href="{{ asset('landing/assets/css/bootstrap.min.css')}}" type="text/css" />
   <!-- animate -->
@@ -49,8 +49,8 @@
         <div class="container">
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
-            <a class="navbar-brand" href="../../index.html">
-              <img class="logo" src="{{ asset('landing/assets/img/logo.svg')}}" alt="logo" />
+            <a class="navbar-brand" href="./">
+              <img class="logo" src="{{  asset('landing/web.png')}}" style="width:100%; max-width:240px;" alt="logo" />
             </a>
 
             <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
@@ -242,6 +242,7 @@
             @foreach($ab as $p)
               <div class="col-lg-6 ml-auto">
                 <div class="title_sections mb-0">
+                  <h1>Kegiatan Main Camp</h1>
                   <h2>
                   {{ $p->judulab }}
                   </h2>
@@ -254,7 +255,7 @@
                 <div class="row">
                   <div class="col-md-6 ml-auto">
                     <div class="item_logo" data-aos="fade-up" data-aos-delay="0">
-                      <img src="{{asset('storage/'.$p->gambarab)}}"  style="max-width:500px;width:100%;"/>
+                      <img src="{{asset('storage/'.$p->gambarab)}}"  style="max-width:400px;width:100%;"/>
                       <!-- <p class="c-gray">
                         Trusted Rakon Design Agency.
                       </p> -->
@@ -268,116 +269,7 @@
           </div>
         </section>
         <!-- End logos -->
-        <!-- Start Tabs Service -->
-        <section class="tabs_works tabs_service margin-b-6">
-          <div class="container">
-            <div class="row justify-content-center text-center">
-              <div class="col-lg-5">
-                <div class="title_sections_inner margin-b-5">
-                  <h2>Maskot </h2>
-                </div>
-              </div>
-            </div>
-            <!-- Start Tabs -->
-            <div class="row">
-              <div class="col-md-10 col-lg-4">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <a class="nav-link active" id="v-pills-ss1-tab" data-toggle="pill" href="#v-pills-ss1" role="tab"
-                    aria-controls="v-pills-ss1" aria-selected="true">
-                    <h4 class="margin-b-2 font-s-18">Manage your portfolio</h4>
-                    <p>
-                      Buy and sell popular digital currencies, keep track of
-                      them in the one place.
-                    </p>
-                  </a>
-                  <a class="nav-link" id="v-pills-ss2-tab" data-toggle="pill" href="#v-pills-ss2" role="tab"
-                    aria-controls="v-pills-ss2" aria-selected="false">
-                    <h4 class="margin-b-2 font-s-18">Vault protection</h4>
-                    <p>
-                      For added security, store your funds in a vault with
-                      time delayed withdrawals.
-                    </p>
-                  </a>
-                  <a class="nav-link" id="v-pills-ss3-tab" data-toggle="pill" href="#v-pills-ss3" role="tab"
-                    aria-controls="v-pills-ss3" aria-selected="false">
-                    <h4 class="margin-b-2 font-s-18">Mobile apps</h4>
-                    <p>
-                      Stay on top of the markets with the Coinbase app for
-                      <span class="c-blue">Android</span> or
-                      <span class="c-blue">iOS</span>.
-                    </p>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-10 col-lg-7 ml-auto mt-md-auto">
-                <div class="tab-content img--tabs slide_bottom" id="v-pills-tabContent">
-                  <div class="tab-pane fade show active" id="v-pills-ss1" role="tabpanel"
-                    aria-labelledby="v-pills-ss1-tab">
-                    <img class="--img" src="{{ asset('landing/isc-maskot.png')}}" style="max-width:500px;width:100%;" alt="" />
-                  </div>
-                  <div class="tab-pane fade" id="v-pills-ss2" role="tabpanel" aria-labelledby="v-pills-ss2-tab">
-                    <img class="--img" src="{{ asset('landing/fiqsi-maskot.png')}}" style="max-width:500px;width:100%;" alt="" />
-                  </div>
-                  <div class="tab-pane fade" id="v-pills-ss3" role="tabpanel" aria-labelledby="v-pills-ss3-tab">
-                    <img class="--img" src="{{ asset('landing/osiris-maskot.png')}}" style="max-width:500px;width:100%;" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Tabs -->
-          </div>
-        </section>
-        <!-- End. Tabs Service -->
-
-        <!-- Start Testimonial -->
-        <section class="testimonial_demo2 padding-t-12">
-          <div class="container">
-            <div class="row justify-content-between">
-              <div class="col-lg-5 mb-4 mb-lg-0">
-                <div class="item_mmon">
-                  <div class="profile_user">
-                    <img src="{{ asset('landing/assets/img/persons/14.png')}}" />
-                    <div class="categ">
-                      <span>Project Manager</span>
-                    </div>
-                  </div>
-                  <div class="info_persons">
-                    <p>
-                      "Mobiteam created our full Visual Brand Identity and our
-                      online store. We worked together on this project for 4
-                      months and I have exclusively positive feedback. We were
-                      far from IT and development."
-                    </p>
-                    <h5>Tommy Reaves</h5>
-                    <span>Rexona</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5">
-                <div class="item_mmon">
-                  <div class="profile_user">
-                    <img src="{{ asset('landing/assets/img/persons/13.png')}}" />
-                    <div class="categ">
-                      <span>CEO Founder</span>
-                    </div>
-                  </div>
-                  <div class="info_persons">
-                    <p>
-                      "We looked for an ambitious team to join us for this
-                      realization journey. Right from the beginning, we were
-                      impressed how Marcel and his team carefully and
-                      proactively read and commented on our proposal."
-                    </p>
-                    <h5>Lydia James</h5>
-                    <span>orino Stu.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End. Testimonial -->
-
+               
         <!-- hide Header -->
         <!-- <div id="triggerForm"></div> -->
         <!-- End. -->
@@ -450,177 +342,174 @@
         <!-- <div id="triggerTo"></div> -->
         <!-- End. -->
 
-        <!-- Start Agency About -->
+        <!-- Start Maskot Fiqsi-->
         <section class="about_agency padding-t-12" id="About">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 ">
                 <div class="title_sections mb-0">
-                  <div class="before_title">
+                  <!-- <div class="before_title">
                     <span>Digital Agency</span>
                     <span class="c-blue">People</span>
+                  </div> -->
+                  <h2>Our Maskot 👋</h2>
+                  <p>
+                    desc maskot
+                  </p>
+                  <!-- start row -->
+                  <div class="row">
+                  <div class="col-sm-6">
+                  <button
+                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
+                  </button>
                   </div>
-                  <h2>The brightest minds in digital, at your service 👋</h2>
-                  <p>
-                    Coinbase has a variety of features that make it the best
-                    place to start trading
-                  </p>
-                  <p>
-                    You’re unique. A one-off. A fascinating work in progress.
-                    Your life isn’t off-the-shelf. So should your home be?
-                  </p>
-                  <p>
-                    We say no. It’s why you can change the size, colours and
-                    materials of nearly every design. And we’re here to help
-                    you style your home, your way. And although styling advice
-                    is always free in our stores, this month, you can enjoy
-                    the full in-home experience at no cost.
-                  </p>
-                  <p>
-                    Live a life as individual as you are. Live ekstraordinær.
-                  </p>
-                  <img class="inside_pic" src="{{ asset('landing/assets/img/agency/98701.jpg')}}" />
+                  <div class="col-sm-6">
+                  <button
+                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
+                  </button>
+                  </div>
+                  </div>
+                  <!-- end row -->
                 </div>
               </div>
-              <div class="col-lg-5 ml-auto">
-                <div class="pro_agency">
-                  <img src="{{ asset('landing/assets/img/agency/0976401.jpg')}}" />
-                </div>
+              <div class="col-lg-4 ml-auto "  data-aos="fade-up" data-aos-delay="0">
+                <!-- <div class="pro_agency"> -->
+                  <img src="{{ asset('landing/fiqsi-maskot.png')}}" style="width:100%; max-width:400px" />
+                <!-- </div> -->
               </div>
             </div>
           </div>
         </section>
-        <!-- Edn. Agency About -->
+        <!-- Edn. Maskot Fiqsi -->
 
-        <!-- strat Blog -->
-        <section class="blog_agency margin-t-5 padding-t-12" id="Blog">
+        <!-- Start Maskot ISC-->
+        <section class="about_agency padding-t-12" id="About">
           <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-lg-3">
-                <div class="title_sections">
-                  <h2>We Write Insightful Stuff</h2>
+            <div class="row justify-content-center">
+              <div class="col-lg-6 ">
+                <div class="title_sections mb-0">
+                  <!-- <div class="before_title">
+                    <span>Digital Agency</span>
+                    <span class="c-blue">People</span>
+                  </div> -->
+                  <h2>Our Maskot 👋</h2>
+                  <p>
+                    desc maskot
+                  </p>
+                  <!-- start row -->
+                  <div class="row">
+                  <div class="col-sm-6">
+                  <button
+                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
+                  </button>
+                  </div>
+                  <div class="col-sm-6">
+                  <button
+                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
+                  </button>
+                  </div>
+                  </div>
+                  <!-- end row -->
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 mb-3 mb-lg-0 items">
-                <a href="#" class="item_art">
-                  <div class="item_top">
-                    <div class="date_mo">
-                      <h5>31</h5>
-                      <span>Mar</span>
-                    </div>
-                    <div class="item_cai">
-                      <span class="c-red">Popular Posts</span>
-                      <div class="name_pub">By John Smith</div>
-                    </div>
-                  </div>
-                  <img src="../../assets/img/agency/097422.png" />
-                  <div class="ga_info">
-                    <h4>
-                      Should Your Brand ride the Coronavirus Wave to drive
-                      gains?
-                    </h4>
-                    <div class="tags__bottom">
-                      <span>#Google </span>
-                      <span>#Amazon</span>
-                      <span>#Design</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 mb-3 mb-lg-0 items">
-                <a href="#" class="item_art">
-                  <div class="item_top">
-                    <div class="date_mo">
-                      <h5>4</h5>
-                      <span>Jun</span>
-                    </div>
-                    <div class="item_cai">
-                      <span>Design</span>
-                      <div class="name_pub">By John Smith</div>
-                    </div>
-                  </div>
-                  <img src="../../assets/img/agency/654.png" />
-                  <div class="ga_info">
-                    <h4>
-                      Should Your Brand ride the Coronavirus Wave to drive
-                      gains?
-                    </h4>
-                    <div class="tags__bottom">
-                      <span>#Google </span>
-                      <span>#Amazon</span>
-                      <span>#Design</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 mb-3 mb-lg-0 items">
-                <a href="#" class="item_art is_image">
-                  <img src="../../assets/img/agency/09874.png" />
-                </a>
-              </div>
-              <div class="col-lg-4 mb-3 mb-lg-0 items">
-                <a href="#" class="item_art is_image">
-                  <img src="../../assets/img/agency/06541.png" />
-                </a>
-              </div>
-              <div class="col-lg-4 mb-3 mb-lg-0 items">
-                <a href="#" class="item_art">
-                  <div class="item_top">
-                    <div class="date_mo">
-                      <h5>9</h5>
-                      <span>Jun</span>
-                    </div>
-                    <div class="item_cai">
-                      <span>Developer</span>
-                      <div class="name_pub">By John Smith</div>
-                    </div>
-                  </div>
-                  <img src="../../assets/img/agency/0654.png" />
-                  <div class="ga_info">
-                    <h4>
-                      Should Your Brand ride the Coronavirus Wave to drive
-                      gains?
-                    </h4>
-                    <div class="tags__bottom">
-                      <span>#Google </span>
-                      <span>#Amazon</span>
-                      <span>#Design</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-4 mb-3 mb-lg-0 items">
-                <a href="#" class="item_art">
-                  <div class="item_top">
-                    <div class="date_mo">
-                      <h5>13</h5>
-                      <span>Jun</span>
-                    </div>
-                    <div class="item_cai">
-                      <span>Illustration</span>
-                      <div class="name_pub">By John Smith</div>
-                    </div>
-                  </div>
-                  <img src="../../assets/img/agency/11654.png" />
-                  <div class="ga_info">
-                    <h4>
-                      Should Your Brand ride the Coronavirus Wave to drive
-                      gains?
-                    </h4>
-                    <div class="tags__bottom">
-                      <span>#Google </span>
-                      <span>#Amazon</span>
-                      <span>#Design</span>
-                    </div>
-                  </div>
-                </a>
+              <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="0">
+                <!-- <div class="pro_agency"> -->
+                  <img src="{{ asset('landing/isc-maskot.png')}}" style="width:100%; max-width:400px" />
+                <!-- </div> -->
               </div>
             </div>
           </div>
         </section>
-        <!-- End. Blog -->
+        <!-- Edn. Maskot ISC -->
+
+        <!-- Start Maskot osiris-->
+        <section class="about_agency padding-t-12" id="About">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 ">
+                <div class="title_sections mb-0">
+                  <!-- <div class="before_title">
+                    <span>Digital Agency</span>
+                    <span class="c-blue">People</span>
+                  </div> -->
+                  <h2>Our Maskot 👋</h2>
+                  <p>
+                    desc maskot
+                  </p>
+                  <!-- start row -->
+                  <div class="row">
+                  <div class="col-sm-6">
+                  <button
+                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
+                  </button>
+                  </div>
+                  <div class="col-sm-6">
+                  <button
+                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
+                  </button>
+                  </div>
+                  </div>
+                  <!-- end row -->
+                </div>
+              </div>
+              <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="0">
+                <!-- <div class="pro_agency"> -->
+                  <img src="{{ asset('landing/osiris-maskot.png')}}" style="width:100%; max-width:400px" />
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Edn. Maskot Osiris -->
+        
+        <!-- Start section__stories -->
+        <section class="section__stories margin-b-6" id="Stories">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-5">
+                <div class="title_sections_inner margin-b-5">
+                  <h2>Media Partner</h2>
+                </div>
+              </div>
+            </div>
+            <div class="swip__topic">
+              <!-- Swiper -->
+              <div class="swiper-container swipe_basic_topic">
+                <div class="swiper-wrapper">
+                @foreach($partner as $p)
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="media">
+                        <!-- <div class="ico__top"> -->
+                          <img src="{{asset('storage/'.$p->gambarpart)}}" style="width:100%; max-width:100px;">
+                            <g id="_03" data-name="03" transform="translate(-5 -2)">
+                              <path id="Oval-2" d="M12,19a7,7,0,0,0,7-7q0-3.866-7-10Q5,8.134,5,12A7,7,0,0,0,12,19Z"
+                                fill-rule="evenodd" opacity="0.3"></path>
+                              <rect id="Rectangle" width="2" height="11" rx="1" transform="translate(11 11)"></rect>
+                            </g>
+                        <!-- </div> -->
+                        <div class="media-body">
+                          <div class="t_text">
+                            <h3>{{ $p->name }}</h3>
+                            <!-- <span>54 Topic</span> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                @endforeach
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End. section__stories -->
 
       </main>
       <!-- end main -->
@@ -634,12 +523,13 @@
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
             <div class="item_about">
               <a class="logo" href="agency.html">
-                <img src="../../assets/img/logo.svg" alt="" />
+                <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:240px;" alt="" />
               </a>
+              @foreach($ab as $p)
               <p>
-                Rakon is a simple, elegant, and secure way to build your
-                bitcoin and crypto portfolio.
+               {{ $p->deskripsiab}}
               </p>
+              @endforeach
               <div class="address">
                 <span>1989 Don Jackson Lane</span>
                 <span>Call us: <a href="tel:8089569599">808-956-9599</a></span>
