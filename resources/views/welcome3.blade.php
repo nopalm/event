@@ -32,6 +32,11 @@
   <!-- normalize -->
   <link rel="stylesheet" href="{{ asset('landing/assets/css/normalize.css')}}" type="text/css" />
 
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  
+
   <!-- js for Brwoser -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -406,6 +411,7 @@
                   <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
                   </button>
                   </div>
+                  <br>
                   <div class="col-sm-6">
                   <button
                   class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
@@ -487,7 +493,7 @@
                     <div class="item">
                       <div class="media">
                         <!-- <div class="ico__top"> -->
-                          <img src="{{asset('storage/'.$p->gambarpart)}}" style="width:100%; max-width:100px;">
+                          <img src="{{asset('storage/'.$p->gambarpart)}}" style="width:100%;">
                             <g id="_03" data-name="03" transform="translate(-5 -2)">
                               <path id="Oval-2" d="M12,19a7,7,0,0,0,7-7q0-3.866-7-10Q5,8.134,5,12A7,7,0,0,0,12,19Z"
                                 fill-rule="evenodd" opacity="0.3"></path>
@@ -520,9 +526,9 @@
     <footer class="defalut-footer foot_demo3 light margin-t-12 padding-py-8">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="col-lg-6 col-sm-6 col-md-6 md-auto">
             <div class="item_about">
-              <a class="logo" href="agency.html">
+              <a class="logo" href="./">
                 <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:240px;" alt="" />
               </a>
               @foreach($ab as $p)
@@ -530,65 +536,24 @@
                {{ $p->deskripsiab}}
               </p>
               @endforeach
-              <div class="address">
-                <span>1989 Don Jackson Lane</span>
-                <span>Call us: <a href="tel:8089569599">808-956-9599</a></span>
-              </div>
             </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-2">
+          <div class="col-lg-6 col-sm-6 col-md-6">
+          @foreach($kontak as $p) 
             <div class="item_links">
-              <h4>Social</h4>
-              <a class="nav-link" href="">Blog</a>
-              <a class="nav-link" href="">Facebook</a>
-              <a class="nav-link" href="">Twitter</a>
-              <a class="nav-link" href="">Instagram</a>
+              <h4>Kontak</h4>
+              <p><i class="material-icons">location_on</i>{{$p->alamat}}</p>
+              <p> <i class="material-icons">mail</i></i>{{$p->email}}</p>
+              <p> <i class="material-icons">phone</i></i>{{$p->phone}}</p>
             </div>
-          </div>
-          <div class="col-6 col-md-6 col-lg-2">
-            <div class="item_links">
-              <h4>Company</h4>
-              <a class="nav-link" href="">About</a>
-              <a class="nav-link" href="">Affiliates</a>
-              <a class="nav-link" href="">Careers</a>
-              <a class="nav-link" href="">Legal & Privacy</a>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mt-4 mt-lg-0">
-            <div class="item_subscribe">
-              <h4>Subscribe</h4>
-              <p>
-                Subscribe to get the latest<br />
-                news form us
-              </p>
-              <form class="form-row">
-                <div class="col-md-11 form-group subscribebtn">
-                  <div class="item_input">
-                    <input type="email" class="form-control rounded-8" id="exampleInputEmail1"
-                      placeholder="Enter email address" aria-describedby="emailHelp" />
-                    <button type="button" class="btn ripple_circle scale rounded-8 btn_subscribe">
-                      <i class="tio send"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+          @endforeach
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 margin-t-1">
-            <select data-menu>
-              <option>French</option>
-              <option selected>English</option>
-              <option>Arabic</option>
-              <option>Russian</option>
-            </select>
-          </div>
-        </div>
+       
         <div class="col-12 text-center padding-t-4">
           <div class="copyright">
             <span>© 2020
-              <a href="https://themeforest.net/user/orinostu" target="_blank">OrinoStu.</a>
+              <a href="" target="_blank">Antasena</a>
               All Right Reseved</span>
           </div>
         </div>
@@ -618,29 +583,15 @@
     </div> -->
     <!-- End. Toasts -->
 
-    <!-- Video Modal -->
-    <div class="modal mdll_video fade" id="mdllVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <!-- Close -->
-      <button type="button" class="close bbt_close ripple_circle" data-dismiss="modal" aria-label="Close">
-        <i class="tio clear"></i>
-      </button>
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                allow="autoplay"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Start Section Loader -->
     <section class="loading_overlay">
       <div class="loader_logo">
-        <img class="logo" src="{{ asset('landing/assets/img/logo.svg')}}" />
+        <img src="{{ asset('landing/logo antasena.png')}}" style="width:100%;max-width:150px;
+        -webkit-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
+        -moz-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
+        -o-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
+        -ms-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
+        animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;"  />
       </div>
     </section>
     <!-- End. Loader -->
