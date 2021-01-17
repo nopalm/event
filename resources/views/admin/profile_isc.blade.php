@@ -53,6 +53,32 @@
                 @endif     <br>     
                 <input id="avatar" name="gambar_prof" type="file" class="form-control"> <br>
                  <small  class="text-muted">Kosongkan jika tidak ingin mengubah foto</small> <br>                
+                <!-- <div class="divider"></div> -->
+                <br>
+
+                <h4 class="card-title">Tema Maskot</h4>
+                <div class="input-field col s12">
+                    <textarea id="textarea2" name="tema_maskot" class="materialize-textarea"
+                        data-length="1000">{{ $p->tema_maskot}}</textarea>
+                    <label for="textarea2">Tema Maskot</label>
+                </div> 
+                <br>
+                <h4 class="card-title">Slogan Maskot</h4>
+                <div class="input-field col s12">
+                    <textarea id="textarea2" name="slogan_maskot" class="materialize-textarea"
+                        data-length="1000">{{ $p->slogan_maskot}}</textarea>
+                    <label for="textarea2">Sogan Maskot</label>
+                </div> 
+                <br>
+                Current Maskot Image: <br>     
+                @if($p->maskot)       
+                <img src="{{asset('storage/'.$p->maskot)}}" width="120px" />
+                       <br>
+                @else        
+                No avatar     
+                @endif     <br>     
+                <input id="avatar" name="maskot" type="file" class="form-control"> <br>
+                 <small  class="text-muted">Kosongkan jika tidak ingin mengubah foto</small> <br>                
                 <div class="divider"></div>
                 <div class="card-content">
                     <!-- <a href="{{ route('about.edit',$p->id)}}">

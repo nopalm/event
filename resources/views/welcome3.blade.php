@@ -9,10 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Welcome to Rakon Multi-Purpose HTML5 Templates RTL Supported, built with HTML, JS, SASS, CSS3 and jQuery, RTL Supported, Easy User Experience and Responsive to all devices" />
+    content="Antasena 2021 adalah kompetisi olimpiade dan seni tahunan yang diselenggarakan oleh siswa-siswi SMAU BP Amanatul Ummah, Mojokerto. dimana kompetisi ini terdiri dari 3 cabang lomba yakni islamic scout competition (ISC), festival qur'ani dan seni islami (FIQSI), dan olimpiade sains remaja indonesia (OSIRIS)" />
   <meta name="keywords"
-    content="HTML, CSS, JavaScript, Bootstrap, jQuery, Rakon, Themeforest, Template, envato, SASS, SCSS, HTML5, landing page, SaaS Product, SaaS Modern,  MultiPurpose, Crypto, Currency, ICO, Hosting, Agency, Mobile, App, Interior, Charity" />
-  <meta name="author" content="Rakon - Creative Multi-Purpose HTML5 Templates" />
+    content="event antasena,antasena,event" />
+  <meta name="author" content="antasena" />
 
   <title>Antasena</title>
   <!-- favicon -->
@@ -87,19 +87,19 @@
                     <ul class="dropdown_menu_nav">
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-isc')}}">
                           ISC
                         </a>
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-fiqsi')}}">
                           Fiqsi
                         </a>
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-osiris')}}">
                           Osiris
                         </a>
                       </li>
@@ -197,10 +197,10 @@
                   <!-- <span class="d-block c-dark font-s-16">ISC</span> -->
                   <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" />
                   <div class="title_sections">
-                    <h2 class="c-dark">{{ $p->nama_prof }}</h2>
-                    <p class="c-gray">
+                  <center><h2 class="c-dark">{{ $p->nama_prof }}</h2></center>
+                  <center><p class="c-gray">
                     {{ $p->tema_prof }}
-                    </p>
+                    </p></center>
                   </div>
                 </div>
               </div>  
@@ -212,10 +212,10 @@
                   <!-- <span class="d-block c-dark font-s-16">AMC Networks</span> -->
                   <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" />
                   <div class="title_sections">
-                    <h2 class="c-dark">{{ $p->nama_prof }}</h2>
-                    <p class="c-gray">
+                  <center><h2 class="c-dark">{{ $p->nama_prof }}</h2></center>
+                  <center><p class="c-gray">
                     {{ $p->tema_prof }}
-                    </p>
+                    </p></center>
                   </div>
                 </div>
               </div>
@@ -227,10 +227,10 @@
                   <!-- <span class="d-block c-dark font-s-16">Musicfolio</span> -->
                   <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" />
                   <div class="title_sections">
-                    <h2 class="c-dark">{{ $p->nama_prof }}</h2>
-                    <p class="c-gray">
+                  <center><h2 class="c-dark">{{ $p->nama_prof }}</h2></center>
+                  <center><p class="c-gray">
                     {{ $p->tema_prof }}
-                    </p>
+                    </p></center>
                   </div>
                 </div>
               </div>
@@ -372,45 +372,58 @@
                   </div>
 
                   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  @foreach($profile_isc as $p)
                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
                       aria-controls="v-pills-home" aria-selected="true">
-                      <h4 class="margin-b-2 font-s-20 c-dark">Client Satisfaction</h4>
+                      <h4 class="margin-b-2 font-s-20 c-dark">Isc</h4>
                       <p>
-                        Client Satisfaction is our first priority and We are
-                        best at it .Keep In Touch.
+                      Tema :  {{ $p-> tema_maskot}}  <br>
+                      Slogan : {{ $p-> slogan_maskot}}
                       </p>
                     </a>
+                  @endforeach
+                  @foreach($profile_fiqsi as $p)
                     <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
                       aria-controls="v-pills-profile" aria-selected="false">
-                      <h4 class="margin-b-2 font-s-20 c-dark">UX Planning</h4>
+                      <h4 class="margin-b-2 font-s-20 c-dark">Fiqsi</h4>
                       <p>
-                        We provide the best UI/UX Design by following the
-                        latest trends of the market .
+                      Tema :  {{ $p-> tema_maskot}} <br>
+                      Slogan : {{ $p-> slogan_maskot}}
                       </p>
                     </a>
+                  @endforeach
+                  @foreach($profile_fiqsi as $p)
                     <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
                       aria-controls="v-pills-messages" aria-selected="false">
-                      <h4 class="margin-b-2 font-s-20 c-dark">Cloud Stroage</h4>
+                      <h4 class="margin-b-2 font-s-20 c-dark">Osiris</h4>
                       <p>
-                        LiteSpeed Web Server known for its high performance.
+                      Tema : {{ $p-> tema_maskot}} <br>
+                      Slogan : {{ $p-> slogan_maskot}}
                       </p>
                     </a>
+                  @endforeach
                   </div>
                 </div>
                 <div class="col-lg-7 ml-auto">
                   <div class="tab-content img--tabs" id="v-pills-tabContent">
+                  @foreach($profile_isc as $p)
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                       aria-labelledby="v-pills-home-tab">
-                      <img class="--img" src="{{ asset('landing/isc-maskot.png')}}" style="width:100%;max-width:400px;" alt="" />
+                      <img class="--img" src="{{asset('storage/'.$p->maskot)}}" style="width:100%;max-width:400px;" alt="" />
                     </div>
+                  @endforeach
+                  @foreach($profile_fiqsi as $p)
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                       aria-labelledby="v-pills-profile-tab">
-                      <img class="--img" src="{{ asset('landing/fiqsi-maskot-rez.png')}}" style="width:100%;max-width:400px;"  alt="" />
+                      <img class="--img" src="{{asset('storage/'.$p->maskot)}}" style="width:100%;max-width:400px;"  alt="" />
                     </div>
+                  @endforeach
+                  @foreach($profile_osiris as $p)
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                       aria-labelledby="v-pills-messages-tab">
-                      <img class="--img" src="{{ asset('landing/osiris-maskot.png')}}"  style="width:100%;max-width:400px;" alt="" />
+                      <img class="--img" src="{{asset('storage/'.$p->maskot)}}"  style="width:100%;max-width:400px;" alt="" />
                     </div>
+                  @endforeach
                   </div>
                 </div>
               </div>

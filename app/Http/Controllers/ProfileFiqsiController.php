@@ -79,6 +79,8 @@ class ProfileFiqsiController extends Controller
          $about->tema_prof = $request->get('tema_prof');
          $about->ig_prof = $request->get('ig_prof');
          $about->g_form = $request->get('g_form');
+         $about->tema_maskot = $request->get('tema_maskot');
+         $about->slogan_maskot = $request->get('slogan_maskot');
          if($request->file('gambar_prof')){     
              if($about->gambar_prof && file_exists(storage_path('app/public/' . $about->gambar_prof))){         
              \Storage::delete('public/'.$about->gambar_prof);     
@@ -86,6 +88,14 @@ class ProfileFiqsiController extends Controller
          $file = $request->file('gambar_prof')->store('imageprofilefiqsi', 'public');     
          $about->gambar_prof = $file; 
         }  
+        
+        if($request->file('maskot')){     
+            if($about->maskot && file_exists(storage_path('app/public/' . $about->maskot))){         
+            \Storage::delete('public/'.$about->maskot);     
+       }    
+        $file = $request->file('maskot')->store('maskotprofileIsc', 'public');     
+        $about->maskot = $file; 
+       } 
          $about->save();
          return redirect('/profile_fiqsi');
     }
