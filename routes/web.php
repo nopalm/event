@@ -22,7 +22,7 @@ Route::post('/contact', function(Request $request){
 
 Route::get('/', 'IndexController@index');
 Route::get('/about-us', 'IndexController@landingAbout');
-Route::get('/contact', 'IndexController@landingContact');
+Route::get('/landing-kontak', 'IndexController@landingKontak');
 Route::get('/landing-isc', 'IndexController@landingIsc');
 Route::get('/landing-fiqsi', 'IndexController@landingFiqsi');
 Route::get('/landing-osiris', 'IndexController@landingOsiris');

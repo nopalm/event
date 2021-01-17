@@ -97,6 +97,14 @@ class IndexController extends Controller
         $kontak = Kontak::all();
         return view('landing_galeri',['galeri'=>$galeri,'kontak'=>$kontak,'ab'=>$ab]);
     }
+
+    public function landingKontak(){
+        $kontak = Kontak::all();
+        $ab = About::all();
+        return view('landing_kontak',['kontak'=>$kontak,'ab'=>$ab]);
+    }
+
+
     
 }
 

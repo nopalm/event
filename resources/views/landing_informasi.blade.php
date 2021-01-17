@@ -208,13 +208,13 @@
                     <ul class="dropdown_menu_nav">
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-galeri')}}">
                           Galeri Foto
                         </a>
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between active" href="#">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between active" href="{{ url('landing-informasi')}}">
                           Dokumen
                         </a>
                       </li>
@@ -231,7 +231,7 @@
                 </li>
               </ul>
               <div class="nav_account btn_demo2">
-                <a href="#" class="btn btn_sm_primary effect-letter rounded-8">
+                <a href="{{ url('landing-kontak')}}" class="btn btn_sm_primary effect-letter rounded-8">
                   Contact
                 </a>
               </div>
@@ -293,7 +293,7 @@
         <!-- End. content-Sblog -->
               
         <!-- Start section__priorities -->
-        <section class="margin-b-6">
+        <section class="margin-b-6 simplecontact_section">
           <div class="container">
             <div class="row justify-content-center text-center">
               <div class="col-lg-5">
@@ -343,7 +343,11 @@
                 @endforeach
                 </div>
               </div>
-
+              <div class="circle-ripple">
+                <div class="ripple ripple-1"></div>
+                <div class="ripple ripple-2"></div>
+                <div class="ripple ripple-3"></div>
+                </div>
             </div>
           </div>
         </section>
@@ -423,7 +427,7 @@
           <div class="row">
             <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
               <div class="item_about">
-                <a class="logo" href="hosting.html">
+                <a href="./">
                   <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:250px;" alt="" />
                 </a>
                 @foreach($ab as $p)

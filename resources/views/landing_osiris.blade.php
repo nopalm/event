@@ -231,7 +231,7 @@
                 </li>
               </ul>
               <div class="nav_account btn_demo2">
-                <a href="#" class="btn btn_sm_primary effect-letter rounded-8">
+                <a href="{{ url('landing-kontak')}}" class="btn btn_sm_primary effect-letter rounded-8">
                   Contact
                 </a>
               </div>
@@ -304,13 +304,12 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                  <h2 class="text-center">Daftar Lomba </h2>
-                  <!-- <p class="margin-b-3">{{ $p->desc_prof}}</p> -->
+                  <center><h2>Daftar Lomba </h2></center>
                 <div id="rq-icon-box-portion" class="element-single wow fadeIn"> <!-- start of Icon Boxes -->
                       <!-- <h3 class="elements-title">Daftar Lomba</h3> -->
                       <div class="row">
-					@foreach($osiris as $p) 
-					  <div class="col-md-4 col-sm-4">
+					            @foreach($osiris as $p) 
+					              <div class="col-md-4 col-sm-4">
                           <div class="rq-icon-box-single">
                             <div class="rq-icon">
                               <img src="{{asset('storage/'.$p->gambarosiris)}}" style="width:95%;" alt=""/>
@@ -319,8 +318,7 @@
                             <p class="margin-b-3">{{$p->deskripsiosiris}}</p>
                           </div>
                         </div>
-                        </div>
-					@endforeach
+					            @endforeach
                       </div>
                     </div> <!-- end of Icon Boxes -->
                 </div>
@@ -367,7 +365,7 @@
           <div class="row">
             <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
               <div class="item_about">
-                <a class="logo" href="hosting.html">
+                <a  href="./">
                   <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:250px;" alt="" />
                 </a>
                 @foreach($ab as $p)

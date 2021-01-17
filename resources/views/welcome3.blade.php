@@ -55,7 +55,7 @@
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
             <a class="navbar-brand" href="./">
-              <img class="logo" src="{{  asset('landing/web.png')}}" style="width:100%; max-width:240px;" alt="logo" />
+              <img src="{{  asset('landing/web.png')}}" style="width:100%; max-width:240px;" alt="logo" />
             </a>
 
             <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
@@ -148,7 +148,7 @@
                 </li>
               </ul>
               <div class="nav_account btn_demo2">
-                <a href="#" class="btn btn_sm_primary effect-letter rounded-8">
+                <a href="{{('landing-kontak')}}" class="btn btn_sm_primary effect-letter rounded-8">
                   Contact
                 </a>
               </div>
@@ -354,10 +354,12 @@
                 <div class="title_sections_inner margin-b-5">
                   <h2>Our Maskot</h2>
                 </div>
+                
+               
               </div>
             </div>
             <!-- Start Tabs -->
-            <div class="tabs_works ">
+            <div class="tabs_works  ">
               <div class="row pt-0">
                 <div class="col-md-8 col-lg-4">
                   <div class="title_sections margin-b-6">
@@ -369,7 +371,7 @@
                       velit esse cillum dolore eu fugiat nulla pariatur. -->
                     </p>
                   </div>
-
+                  
                   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   @foreach($profile_isc as $p)
                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"

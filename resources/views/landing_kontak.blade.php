@@ -14,7 +14,7 @@
     content="event antasena,antasena,event" />
   <meta name="author" content="antasena" />
 
-  <title>Isc Page</title>
+  <title>Kontak Page</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="{{  asset('landing/logo antasena.png')}}" type="image/x-icon" />
   <!-- Bootstrap 4.5 -->
@@ -157,7 +157,7 @@
                   <a class="nav-link" href="./">Home</a>
                 </li>  
                 <li class="nav-item dropdown dropdown-hover">
-                  <a class="nav-link dropdown-toggle dropdown_menu active" href="#" id="navbarDropdown" role="button"
+                  <a class="nav-link dropdown-toggle dropdown_menu" href="#" id="navbarDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Event
 
@@ -170,7 +170,7 @@
                     <ul class="dropdown_menu_nav">
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between active" href="{{ url('landing-isc')}}">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between " href="{{ url('landing-isc')}}">
                           ISC
                         </a>
                       </li>
@@ -208,7 +208,7 @@
                     <ul class="dropdown_menu_nav">
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-galeri')}}">
                           Galeri Foto
                         </a>
                       </li>
@@ -231,7 +231,7 @@
                 </li>
               </ul>
               <div class="nav_account btn_demo2">
-                <a href="{{ url('landing-kontak')}}" class="btn btn_sm_primary effect-letter rounded-8">
+            <a href="{{ url('landing-kontak')}}" class="btn btn_sm_primary effect-letter rounded-8">
                   Contact
                 </a>
               </div>
@@ -264,16 +264,14 @@
                     <span class="dot"></span>
                     <time>15min</time>
                   </div> -->
-                  @foreach($profile_isc as $p) 
                   <h1 class="margin-my-3 font-s-60" data-aos="fade-up" data-aos-delay="0">
-                   Islamic Scout Competition 2021
+                   Contact 
                   </h1>
                   <h3 class="margin-my-3 font-s-30" data-aos="fade-up" data-aos-delay="0">
-                  {{$p->tema_prof}}
+                  
                   </h3>
-                  @endforeach
                   <h3 class="margin-my-3 font-s-20" data-aos="fade-up" data-aos-delay="0">
-                  tanngal
+                  Contact us for any information you need
                   </h3>
                 </div>
               </div>
@@ -283,73 +281,91 @@
         </section>
         <!-- End banner_about -->
 
-        <!-- Start content-Sblog -->
-        <section class="content-Sblog" data-sticky-container>
+                <!-- Start section_contact_four -->
+        <section class="section_contact_five contact_six simplecontact_section margin-t-5 padding-t-7 margin-b-10">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12">
-                @foreach($profile_isc as $p) 
-                  <h2>Tentang Islamic Scout Competition </h2>
-                  <p class="margin-b-3">{{ $p->desc_prof}}</p>
-                @endforeach
-                 
+              <div class="col-lg-4">
+                <div class="title_sections_inner">
+                  <h2>Drop us message for any query</h2>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End. content-Sblog -->
-        <!-- Start content-daftar lomba -->
-        <section class="content-Sblog" data-sticky-container>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <!-- @foreach($profile_isc as $p)  -->
-                  <center><h2>Daftar Lomba </h2></center>
-                  <!-- <p class="margin-b-3">{{ $p->desc_prof}}</p> -->
-                <!-- @endforeach -->
-                <div id="rq-icon-box-portion" class="element-single wow fadeIn"> <!-- start of Icon Boxes -->
-                      <!-- <h3 class="elements-title">Daftar Lomba</h3> -->
-                      <div class="row">
-					@foreach($isc as $p) 
-					  <div class="col-md-4 col-sm-4">
-                          <div class="rq-icon-box-single">
-                            <div class="rq-icon">
-                              <img src="{{asset('storage/'.$p->gambarisc)}}" style="width:95%;" alt=""/>
-                            </div>
-                            <h5>{{$p->judulisc}}</h5>
-                            <p class="margin-b-3">{{$p->deskripsiisc}}</p>
-                          </div>
-                        </div>
-					@endforeach
-                      </div>
-                    </div> <!-- end of Icon Boxes -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End. content-daftar Lomba -->
-        <section class="contact__workspace margin-t-12 padding-py-10">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="title_sections mb-0">
-                  <h2 class="c-white">Siapkan Kontingenmu</h2>
-                  <p class="c-white mb-0">Kwarcab se-Jawatimur, Kwarda se-Indonesia, dan National Scout Organization
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-7 mt-4 mt-lg-0 text-lg-right my-lg-auto">
-                <a href="#" class="btn btn_md_primary sweep_top sweep_letter rounded-8 opacity-1">
-                  <div class="inside_item">
-                    <span data-hover="Daftar Sekarang">Daftar Sekarang</span>
+                @foreach($kontak as $p) 
+                <div class="information_agency d-md-flex">
+                  <div class="item_data mr-5">
+                    <p>Phone Number</p>
+                    <a class="tel" href="">{{$p->phone}}</a>
                   </div>
-                </a>
+                  <div class="item_data">
+                    <p>Our Email</p>
+                    <a class="tel" href="">{{$p->email}}</a>
+                  </div>
+                           
+                </div>
+
+                <h3 class="font-s-16 font-w-500 c-gray margin-t-4">Alamat</h3>
+                <p class="font-s-16">{{$p->alamat}}</p>
+                @endforeach
+
+                <div class="scoail__media">
+                  <a href="">
+                    <i class="tio instagram"></i>
+                  </a>
+                </div>
+
+
               </div>
+              <div class="col-lg-6 ml-auto">
+
+                <div class="form_cc_four">
+                  <form action="" class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Phone</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Message</label>
+                        <textarea class="form-control" rows="7"
+                          placeholder="Tell us more about your project, needs, and timeline."></textarea>
+                      </div>
+                      <a href="./" class="btn btn_md_primary bg-red rounded-8 c-white h-fit-content">
+                        Send Message
+                      </a>
+                    </div>
+                    
+                  </form>
+                </div>
+              </div>
+                <div class="circle-ripple">
+                <div class="ripple ripple-1"></div>
+                <div class="ripple ripple-2"></div>
+                <div class="ripple ripple-3"></div>
+                </div>
+            </div>
             </div>
           </div>
         </section>
+        <!-- End. section_contact_four -->
         <!-- Start dividar -->
         <section class="dividar margin-t-12"></section>
         <!-- End. dividar -->
@@ -368,7 +384,7 @@
           <div class="row">
             <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
               <div class="item_about">
-                <a class="logo" href="hosting.html">
+                <a href="./">
                   <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:250px;" alt="" />
                 </a>
                 @foreach($ab as $p)
