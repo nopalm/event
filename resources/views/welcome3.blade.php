@@ -125,7 +125,7 @@
                     <ul class="dropdown_menu_nav">
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{('landing-galeri')}}">
                           Galeri Foto
                         </a>
                       </li>

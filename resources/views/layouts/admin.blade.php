@@ -187,6 +187,9 @@
                         <li>
                             <a href="{{ url('sponsor')}}" class="collapsible-header"><i class="material-icons">collections</i><span class="hide-menu">Sponsor</span></a>
                         </li>
+                        <li>
+                            <a href="{{ url('galeri')}}" class="collapsible-header"><i class="material-icons">collections</i><span class="hide-menu">Galeri</span></a>
+                        </li>
                         <!-- <li>
                             <a href="{{ url('download')}}" class="collapsible-header"><i class="material-icons">cloud_download</i><span class="hide-menu">Download</span></a>
                         </li> -->

@@ -34,6 +34,8 @@ use App\ProfileOsiris;
 
 use App\Sponsor;
 
+use App\Galeri;
+
 
 class IndexController extends Controller
 {
@@ -88,5 +90,13 @@ class IndexController extends Controller
         $ab = About::all();
         return view('landing_informasi',['profile_isc'=>$profile_isc,'profile_osiris'=>$profile_osiris,'profile_fiqsi'=>$profile_fiqsi,'fiqsi'=>$fiqsi,'kontak'=>$kontak,'ab'=>$ab]);
     }
+
+    public function landingGaleri(){
+        $galeri = Galeri::all();
+        $ab = About::all();
+        $kontak = Kontak::all();
+        return view('landing_galeri',['galeri'=>$galeri,'kontak'=>$kontak,'ab'=>$ab]);
+    }
+    
 }
 
