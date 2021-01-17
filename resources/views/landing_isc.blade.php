@@ -31,7 +31,94 @@
   <link rel="stylesheet" href="{{ asset('landing/assets/css/main.css')}}" type="text/css" />
   <!-- normalize -->
   <link rel="stylesheet" href="{{ asset('landing/assets/css/normalize.css')}}" type="text/css" />
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <!-- <link rel="stylesheet" href="{{ asset('landing2/assets/dist/css/company.style.css')}}"> -->
+  <style>
+      .rq-icon-list {
+  position: relative;
+  width: 100%;
+}
+.rq-icon-list.primary i {
+  color: #cc3333;
+}
+.rq-icon-list.circle li {
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.rq-icon-list.circle i {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #999999;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  top: 4px;
+}
+.rq-icon-list.circle.primary i {
+  background: #cc3333;
+  color: #ffffff;
+  border-color: #cc3333;
+}
+.rq-icon-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.rq-icon-list ul li {
+  position: relative;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #666666;
+}
+.rq-icon-list ul li i {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  font-size: 15px;
+}
+.rq-icon-box-single {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.rq-icon-box-single:hover .rq-icon {
+  box-shadow: 0 0 0 7px rgba(204, 51, 51, 0.2);
+}
+.rq-icon-box-single .rq-icon {
+  width: 100px;
+  height: 100px;
+  /* background: #cc3333; */
+  border-radius: 50%;
+  line-height: 100px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 5px rgba(204, 51, 51, 0.2);
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.rq-icon-box-single .rq-icon img {
+  width: 45px;
+  margin: 0 auto;
+}
+/* .rq-icon-box-single h5 {
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular";
+  margin: 0;
+  line-height: 24px;
+} */
+/* .rq-icon-box-single p {
+  font-size: 13px;
+} */
+
+      </style>
 
   <!-- js for Brwoser -->
   <!--[if lt IE 9]>
@@ -51,7 +138,7 @@
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
             <a class="navbar-brand" href="./">
-              <img class="logo" src="{{  asset('landing/web.png')}}" style="width:100%; max-width:240px;" alt="logo" />
+              <img src="{{  asset('landing/web.png')}}" style="width:100%; max-width:250px;" alt="logo" />
             </a>
 
             <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
@@ -221,11 +308,7 @@
                   <center><h2>Daftar Lomba </h2></center>
                   <!-- <p class="margin-b-3">{{ $p->desc_prof}}</p> -->
                 <!-- @endforeach -->
-                <div class="blog-grid">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12"> <!-- start of elements portion -->
-                    <div id="rq-icon-box-portion" class="element-single wow fadeIn"> <!-- start of Icon Boxes -->
+                <div id="rq-icon-box-portion" class="element-single wow fadeIn"> <!-- start of Icon Boxes -->
                       <!-- <h3 class="elements-title">Daftar Lomba</h3> -->
                       <div class="row">
 					@foreach($isc as $p) 
@@ -235,17 +318,12 @@
                               <img src="{{asset('storage/'.$p->gambarisc)}}" style="width:95%;" alt=""/>
                             </div>
                             <h5>{{$p->judulisc}}</h5>
-                            <p>{{$p->deskripsiisc}}</p>
+                            <p class="margin-b-3">{{$p->deskripsiisc}}</p>
                           </div>
                         </div>
 					@endforeach
                       </div>
                     </div> <!-- end of Icon Boxes -->
-                  </div> <!-- end of elements portion -->
-          
-                </div>
-              </div>
-            </div>
                 </div>
               </div>
             </div>
@@ -264,79 +342,53 @@
     <!-- [id] content -->
 
     <!-- Start footer -->
-    <footer class="foot_demo2 padding-py-12 footer_inner_one bg-black">
+    <footer class="foot_demo2 padding-py-12 footer_inner_one bg-black"  style="background-color: rgba(0, 0, 0, 0.87) !important;">
       <div class="container">
         <!-- Start footer -->
         <div class="defalut-footer">
           <div class="row">
-            <div class="col-md-6 col-lg-4 mb-4 mb-sm-0">
+            <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
               <div class="item_about">
                 <a class="logo" href="hosting.html">
-                  <img src="../../assets/img/logo.svg" alt="" />
+                  <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:250px;" alt="" />
                 </a>
+                @foreach($ab as $p)
                 <p>
-                  Rakon is a simple, elegant, and secure way to build your
-                  bitcoin and crypto portfolio.
+                {{ $p->deskripsiab}}
                 </p>
+                @endforeach
                 <div class="address">
-                  <span>1989 Don Jackson Lane</span>
+                  <!-- <span>1989 Don Jackson Lane</span>
                   <span>Call us:
-                    <a class="c-red" href="tel:8089569599">808-956-9599</a></span>
+                    <a class="c-red" href="tel:8089569599">808-956-9599</a></span> -->
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md-2">
-              <div class="item_links">
-                <h4>Social</h4>
-                <a class="nav-link" href="">Blog</a>
-                <a class="nav-link" href="">Facebook</a>
-                <a class="nav-link" href="">Twitter</a>
-                <a class="nav-link" href="">Instagram</a>
-              </div>
-            </div>
-            <div class="col-6 col-md-2">
-              <div class="item_links">
-                <h4>Company</h4>
-                <a class="nav-link" href="">About</a>
+            <div class="col-lg-4 col-md-2">
+              <!-- <div class="item_links"> -->
+              <img src="{{  asset('landing/antasena-fullpage.png')}}" style="width:100%;" alt="" />
+                <!-- <h4>Company</h4> -->
+                <!-- <a class="nav-link" href="">About</a>
                 <a class="nav-link" href="">Affiliates</a>
                 <a class="nav-link" href="">Careers</a>
-                <a class="nav-link" href="">Legal & Privacy</a>
-              </div>
+                <a class="nav-link" href="">Legal & Privacy</a> -->
+              <!-- </div> -->
             </div>
             <div class="col-md-4 mt-4 mt-sm-0">
-              <div class="item_subscribe">
-                <h4>Subscribe</h4>
-                <p>
-                  Subscribe to get the latest<br />
-                  news form us
-                </p>
-                <form class="form-row">
-                  <div class="col-md-11 form-group subscribebtn">
-                    <div class="item_input">
-                      <input type="email" class="form-control rounded-pill" id="exampleInputEmail1"
-                        placeholder="Enter email address" aria-describedby="emailHelp" />
-                      <button type="button" class="btn ripple_circle scale rounded-circle btn_subscribe">
-                        <i class="tio send"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 margin-t-1">
-              <select data-menu>
-                <option selected>English</option>
-                <option>Arabic</option>
-                <option>Russian</option>
-              </select>
+                <div class="item_links">
+                    <h4>Kontak</h4>
+                    @foreach($kontak as $p) 
+                    <p class="nav-link"><i class="material-icons">location_on</i>{{$p->alamat}}</p>
+                    <p class="nav-link"><i class="material-icons">mail</i>{{$p->email}}</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}}</p>
+                    @endforeach
+                </div>     
             </div>
           </div>
           <div class="col-12 text-center padding-t-6">
             <div class="copyright">
               <span>© 2020
-                <a href="https://themeforest.net/user/orinostu" target="_blank">OrinoStu.</a>
+                <a href="" target="_blank">Antasena</a>
                 All Right Reseved</span>
             </div>
           </div>
@@ -345,25 +397,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-
-    <!-- Video Modal -->
-    <div class="modal mdll_video fade" id="mdllVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <!-- Close -->
-      <button type="button" class="close bbt_close ripple_circle" data-dismiss="modal" aria-label="Close">
-        <i class="tio clear"></i>
-      </button>
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                allow="autoplay"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Back to top with progress indicator-->
     <div class="prgoress_indicator">

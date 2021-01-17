@@ -58,22 +58,25 @@ class IndexController extends Controller
     public function landingIsc(){
         $profile_isc = ProfileIsc::all();
         $isc = Isc::all();
+        $ab = About::all();
         $kontak = Kontak::all();
-        return view('landing_isc',['profile_isc'=>$profile_isc,'isc'=>$isc,'kontak'=>$kontak]);
+        return view('landing_isc',['profile_isc'=>$profile_isc,'isc'=>$isc,'kontak'=>$kontak,'ab'=>$ab]);
     }
 
     public function landingOsiris(){
         $profile_osiris = ProfileOsiris::all();
         $osiris = Osiris::all();
         $kontak = Kontak::all();
-        return view('landing_osiris',['profile_osiris'=>$profile_osiris,'osiris'=>$osiris,'kontak'=>$kontak]);
+        $ab = About::all();
+        return view('landing_osiris',['profile_osiris'=>$profile_osiris,'osiris'=>$osiris,'kontak'=>$kontak,'ab'=>$ab]);
     }
 
     public function landingFiqsi(){
         $profile_fiqsi = ProfileFiqsi::all();
         $fiqsi = Fiqsi::all();
         $kontak = Kontak::all();
-        return view('landing_fiqsi',['profile_fiqsi'=>$profile_fiqsi,'fiqsi'=>$fiqsi,'kontak'=>$kontak]);
+        $ab = About::all();
+        return view('landing_fiqsi',['profile_fiqsi'=>$profile_fiqsi,'fiqsi'=>$fiqsi,'kontak'=>$kontak,'ab'=>$ab]);
     }
 }
 

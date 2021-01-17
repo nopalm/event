@@ -197,10 +197,10 @@
                   <!-- <span class="d-block c-dark font-s-16">ISC</span> -->
                   <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" />
                   <div class="title_sections">
-                  <center><h2 class="c-dark">{{ $p->nama_prof }}</h2></center>
-                  <center><p class="c-gray">
+                    <h2 class="c-dark text-center">{{ $p->nama_prof }}</h2>
+                  <p class="c-gray text-center">
                     {{ $p->tema_prof }}
-                    </p></center>
+                    </p>
                   </div>
                 </div>
               </div>  
@@ -212,10 +212,9 @@
                   <!-- <span class="d-block c-dark font-s-16">AMC Networks</span> -->
                   <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" />
                   <div class="title_sections">
-                  <center><h2 class="c-dark">{{ $p->nama_prof }}</h2></center>
-                  <center><p class="c-gray">
+                  <h2 class="c-dark text-center">{{ $p->nama_prof }}</h2>
+                  <p class="c-gray text-center">
                     {{ $p->tema_prof }}
-                    </p></center>
                   </div>
                 </div>
               </div>
@@ -227,10 +226,10 @@
                   <!-- <span class="d-block c-dark font-s-16">Musicfolio</span> -->
                   <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" />
                   <div class="title_sections">
-                  <center><h2 class="c-dark">{{ $p->nama_prof }}</h2></center>
-                  <center><p class="c-gray">
+                  <h2 class="c-dark text-center">{{ $p->nama_prof }}</h2>
+                  <p class="c-gray text-center">
                     {{ $p->tema_prof }}
-                    </p></center>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -482,44 +481,62 @@
     </div>
     <!-- [id] content -->
 
-    <!-- footr -->
-    <footer class="defalut-footer foot_demo3 light margin-t-12 padding-py-8">
+    <!-- Start footer -->
+    <footer class="foot_demo2 padding-py-12 footer_inner_one bg-black" style="background-color: rgba(0, 0, 0, 0.87) !important;">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-sm-6 col-md-6 md-auto">
-            <div class="item_about">
-              <a class="logo" href="./">
-                <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:240px;" alt="" />
-              </a>
-              @foreach($ab as $p)
-              <p>
-               {{ $p->deskripsiab}}
-              </p>
-              @endforeach
+        <!-- Start footer -->
+        <div class="defalut-footer">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
+              <div class="item_about">
+                <a class="logo" href="hosting.html">
+                  <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:250px;" alt="" />
+                </a>
+                @foreach($ab as $p)
+                <p>
+                {{ $p->deskripsiab}}
+                </p>
+                @endforeach
+                <div class="address">
+                  <!-- <span>1989 Don Jackson Lane</span>
+                  <span>Call us:
+                    <a class="c-red" href="tel:8089569599">808-956-9599</a></span> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-2">
+              <!-- <div class="item_links"> -->
+              <img src="{{  asset('landing/antasena-fullpage.png')}}" style="width:100%;" alt="" />
+                <!-- <h4>Company</h4> -->
+                <!-- <a class="nav-link" href="">About</a>
+                <a class="nav-link" href="">Affiliates</a>
+                <a class="nav-link" href="">Careers</a>
+                <a class="nav-link" href="">Legal & Privacy</a> -->
+              <!-- </div> -->
+            </div>
+            <div class="col-md-4 mt-4 mt-sm-0">
+                <div class="item_links">
+                    <h4>Kontak</h4>
+                    @foreach($kontak as $p) 
+                    <p class="nav-link"><i class="material-icons">location_on</i>{{$p->alamat}}</p>
+                    <p class="nav-link"><i class="material-icons">mail</i>{{$p->email}}</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}}</p>
+                    @endforeach
+                </div>     
             </div>
           </div>
-          <div class="col-lg-6 col-sm-6 col-md-6">
-          @foreach($kontak as $p) 
-            <div class="item_links">
-              <h4>Kontak</h4>
-              <p><i class="material-icons">location_on</i>{{$p->alamat}}</p>
-              <p> <i class="material-icons">mail</i></i>{{$p->email}}</p>
-              <p> <i class="material-icons">phone</i></i>{{$p->phone}}</p>
+          <div class="col-12 text-center padding-t-6">
+            <div class="copyright">
+              <span>© 2020
+                <a href="" target="_blank">Antasena</a>
+                All Right Reseved</span>
             </div>
-          @endforeach
           </div>
         </div>
-       
-        <div class="col-12 text-center padding-t-4">
-          <div class="copyright">
-            <span>© 2020
-              <a href="" target="_blank">Antasena</a>
-              All Right Reseved</span>
-          </div>
-        </div>
+        <!-- End Footer -->
       </div>
     </footer>
-    <!-- End. -->
+    <!-- End Footer -->
 
     <!-- Back to top with progress indicator-->
     <div class="prgoress_indicator">
