@@ -416,7 +416,7 @@
     <!-- [id] content -->
 
     <!-- Start footer -->
-    <footer class="foot_demo2 padding-py-12 footer_inner_one bg-black"  style="background-color: rgba(0, 0, 0, 0.87) !important;">
+    <footer class="foot_demo2 padding-py-12 footer_inner_one bg-black"  style="background-color: rgb(18, 22, 27) !important;">
       <div class="container">
         <!-- Start footer -->
         <div class="defalut-footer">

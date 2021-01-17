@@ -328,7 +328,26 @@
           </div>
         </section>
         <!-- End. content-daftar Lomba -->
-
+        <section class="contact__workspace margin-t-12 padding-py-10">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="title_sections mb-0">
+                  <h2 class="c-white">Siapkan Kontingenmu</h2>
+                  <p class="c-white mb-0">Kwarcab se-Jawatimur, Kwarda se-Indonesia, dan National Scout Organization
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-7 mt-4 mt-lg-0 text-lg-right my-lg-auto">
+                <a href="#" class="btn btn_md_primary sweep_top sweep_letter rounded-8 opacity-1">
+                  <div class="inside_item">
+                    <span data-hover="Daftar Sekarang">Daftar Sekarang</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- Start dividar -->
         <section class="dividar margin-t-12"></section>
         <!-- End. dividar -->
@@ -340,7 +359,7 @@
     <!-- [id] content -->
 
     <!-- Start footer -->
-    <footer class="foot_demo2 padding-py-12 footer_inner_one bg-black"  style="background-color: rgba(0, 0, 0, 0.87) !important;">
+    <footer class="foot_demo2 padding-py-12 footer_inner_one bg-black"  style="background-color: rgb(18, 22, 27) !important;">
       <div class="container">
         <!-- Start footer -->
         <div class="defalut-footer">
