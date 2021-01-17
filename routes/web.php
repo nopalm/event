@@ -26,6 +26,7 @@ Route::get('/contact', 'IndexController@landingContact');
 Route::get('/landing-isc', 'IndexController@landingIsc');
 Route::get('/landing-fiqsi', 'IndexController@landingFiqsi');
 Route::get('/landing-osiris', 'IndexController@landingOsiris');
+Route::get('/landing-informasi', 'IndexController@landingInformasi');
 // Route::get('/download-file/{id}', 'IndexController@downloadFile');
 
 Route::post('/send','IndexController@send');

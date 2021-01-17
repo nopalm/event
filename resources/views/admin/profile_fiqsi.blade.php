@@ -44,6 +44,13 @@
                     <label for="textarea2">Link Google Form</label>
                 </div> 
                 <br>
+                <h4 class="card-title">Berkas Peserta</h4>
+                <div class="input-field col s12">
+                    <textarea id="textarea2" name="berkas" class="materialize-textarea"
+                        data-length="1000">{{ $p->berkas}}</textarea>
+                    <label for="textarea2">Berkas Peserta</label>
+                </div> 
+                <br>
                 Current Image: <br>     
                 @if($p->gambar_prof)       
                 <img src="{{asset('storage/'.$p->gambar_prof)}}" width="120px" />

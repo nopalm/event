@@ -14,7 +14,7 @@
     content="event antasena,antasena,event" />
   <meta name="author" content="antasena" />
 
-  <title>Isc Page</title>
+  <title>Dokumen Page</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="{{  asset('landing/logo antasena.png')}}" type="image/x-icon" />
   <!-- Bootstrap 4.5 -->
@@ -214,7 +214,7 @@
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-informasi')}}">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
                           Dokumen
                         </a>
                       </li>
@@ -255,7 +255,7 @@
             <div class="row">
               <div class="col-md-8 col-lg-8">
                 <div class="banner_title_inner">
-<!-- 
+                <!-- 
                   <div class="about_post">
                     <span class="c_ategory">
                       <a href="#Design">Design</a>
@@ -264,16 +264,11 @@
                     <span class="dot"></span>
                     <time>15min</time>
                   </div> -->
-                  @foreach($profile_isc as $p) 
                   <h1 class="margin-my-3 font-s-60" data-aos="fade-up" data-aos-delay="0">
-                   Islamic Scout Competition 2021
+                   Dokumen
                   </h1>
                   <h3 class="margin-my-3 font-s-30" data-aos="fade-up" data-aos-delay="0">
-                  {{$p->tema_prof}}
-                  </h3>
-                  @endforeach
-                  <h3 class="margin-my-3 font-s-20" data-aos="fade-up" data-aos-delay="0">
-                  tanngal
+                  Dokumen peserta
                   </h3>
                 </div>
               </div>
@@ -288,10 +283,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                @foreach($profile_isc as $p) 
-                  <h2>Tentang Islamic Scout Competition </h2>
-                  <p class="margin-b-3">{{ $p->desc_prof}}</p>
-                @endforeach
+              <h2> </h2>
                  
                 </div>
               </div>
@@ -299,37 +291,119 @@
           </div>
         </section>
         <!-- End. content-Sblog -->
-        <!-- Start content-daftar lomba -->
-        <section class="content-Sblog" data-sticky-container>
+              
+        <!-- Start section__priorities -->
+        <section class="margin-b-6">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <!-- @foreach($profile_isc as $p)  -->
-                  <center><h2>Daftar Lomba </h2></center>
-                  <!-- <p class="margin-b-3">{{ $p->desc_prof}}</p> -->
-                <!-- @endforeach -->
-                <div id="rq-icon-box-portion" class="element-single wow fadeIn"> <!-- start of Icon Boxes -->
-                      <!-- <h3 class="elements-title">Daftar Lomba</h3> -->
-                      <div class="row">
-					@foreach($isc as $p) 
-					  <div class="col-md-4 col-sm-4">
-                          <div class="rq-icon-box-single">
-                            <div class="rq-icon">
-                              <img src="{{asset('storage/'.$p->gambarisc)}}" style="width:95%;" alt=""/>
-                            </div>
-                            <h5>{{$p->judulisc}}</h5>
-                            <p class="margin-b-3">{{$p->deskripsiisc}}</p>
-                          </div>
-                        </div>
-					@endforeach
-                      </div>
-                    </div> <!-- end of Icon Boxes -->
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-5">
+                <div class="title_sections_inner margin-b-5">
+                  <h2>Dokumen</h2>
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="title_sections">
+                <!-- <h2 class="text-center">Isc</h2> -->
+                @foreach($profile_isc as $p)
+                <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%;max-width:350px;"/>
+                <!-- <center><a href="#" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <div class="inside_item">
+                    <span data-hover="Buy Rakon">Buy Rakon</span>
+                  </div>
+                </a></center> -->
+                @endforeach
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="title_sections mb-0">
+                <!-- <h2 class="text-center">Fiqsi</h2> -->
+                @foreach($profile_fiqsi as $p)
+                <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%;max-width:350px;" />
+                <!-- <center><a href="#" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4" >
+                  <div class="inside_item">
+                    <span data-hover="Buy Rakon">Buy Rakon</span>
+                  </div>
+                </a></center> -->
+                @endforeach
+                
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="title_sections">
+                <!-- <h2 class="text-center">Osiris</h2> -->
+                @foreach($profile_osiris as $p)
+                <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%;max-width:350px;margin-top:60px;" />
+                <!-- <center><a href="#" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <div class="inside_item">
+                    <span data-hover="Buy Rakon">Buy Rakon</span>
+                  </div>
+                </a></center> -->
+                @endforeach
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
-        <!-- End. content-daftar Lomba -->
+        <!-- End. section__priorities -->
+
+                <!-- Start section__priorities -->
+        <section class="margin-b-6" style="margin-top: -176px;">>
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-5">
+                <div class="title_sections_inner margin-b-5">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="title_sections">
+                <h2 class="text-center">Isc</h2>
+                @foreach($profile_isc as $p)
+                <!-- <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%;max-width:350px;"/> -->
+                <center><a href="{{$p->berkas}}" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <div class="inside_item">
+                    <span data-hover="Berkas Peserta">Berkas Peserta</span>
+                  </div>
+                </a></center>
+                @endforeach
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="title_sections mb-0">
+                <h2 class="text-center">Fiqsi</h2>
+                @foreach($profile_fiqsi as $p)
+                <!-- <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%;max-width:350px;" /> -->
+                <center><a href="{{$p->berkas}}" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4" >
+                  <div class="inside_item">
+                    <span data-hover="Berkas Peserta">Berkas Peserta</span>
+                  </div>
+                </a></center>
+                @endforeach
+                
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="title_sections">
+                <h2 class="text-center">Osiris</h2>
+                @foreach($profile_osiris as $p)
+                <!-- <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%;max-width:350px;" /> -->
+                <center><a href="{{$p->berkas}}" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                  <div class="inside_item">
+                    <span data-hover="Berkas Peserta">Berkas Peserta</span>
+                  </div>
+                </a></center>
+                @endforeach
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- End. section__priorities -->
 
         <!-- Start dividar -->
         <section class="dividar margin-t-12"></section>

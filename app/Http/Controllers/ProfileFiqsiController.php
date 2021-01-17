@@ -79,6 +79,7 @@ class ProfileFiqsiController extends Controller
          $about->tema_prof = $request->get('tema_prof');
          $about->ig_prof = $request->get('ig_prof');
          $about->g_form = $request->get('g_form');
+         $about->berkas = $request->get('berkas');
          $about->tema_maskot = $request->get('tema_maskot');
          $about->slogan_maskot = $request->get('slogan_maskot');
          if($request->file('gambar_prof')){     

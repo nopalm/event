@@ -80,6 +80,7 @@ class ProfileOsirisController extends Controller
          $about->ig_prof = $request->get('ig_prof');
          $about->g_form = $request->get('g_form');
          $about->tema_maskot = $request->get('tema_maskot');
+         $about->berkas = $request->get('berkas');
          $about->slogan_maskot = $request->get('slogan_maskot');
          if($request->file('gambar_prof')){     
              if($about->gambar_prof && file_exists(storage_path('app/public/' . $about->gambar_prof))){         

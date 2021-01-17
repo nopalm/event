@@ -78,5 +78,15 @@ class IndexController extends Controller
         $ab = About::all();
         return view('landing_fiqsi',['profile_fiqsi'=>$profile_fiqsi,'fiqsi'=>$fiqsi,'kontak'=>$kontak,'ab'=>$ab]);
     }
+
+    public function landingInformasi(){
+        $profile_fiqsi = ProfileFiqsi::all();
+        $profile_osiris = ProfileOsiris::all();
+        $profile_isc = ProfileIsc::all();
+        $fiqsi = Fiqsi::all();
+        $kontak = Kontak::all();
+        $ab = About::all();
+        return view('landing_informasi',['profile_isc'=>$profile_isc,'profile_osiris'=>$profile_osiris,'profile_fiqsi'=>$profile_fiqsi,'fiqsi'=>$fiqsi,'kontak'=>$kontak,'ab'=>$ab]);
+    }
 }
 
