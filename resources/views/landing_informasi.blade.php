@@ -157,7 +157,7 @@
                   <a class="nav-link" href="./">Home</a>
                 </li>  
                 <li class="nav-item dropdown dropdown-hover">
-                  <a class="nav-link dropdown-toggle dropdown_menu active" href="#" id="navbarDropdown" role="button"
+                  <a class="nav-link dropdown-toggle dropdown_menu " href="#" id="navbarDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Event
 
@@ -170,7 +170,7 @@
                     <ul class="dropdown_menu_nav">
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between active" href="{{ url('landing-isc')}}">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between " href="{{ url('landing-isc')}}">
                           ISC
                         </a>
                       </li>
@@ -194,7 +194,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#Services">Registrasi</a>
                 </li>
-                <li class="nav-item dropdown dropdown-hover">
+                <li class="nav-item dropdown dropdown-hover active">
                   <a class="nav-link dropdown-toggle dropdown_menu" href="#" id="navbarDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Informasi
@@ -214,7 +214,7 @@
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between active" href="#">
                           Dokumen
                         </a>
                       </li>

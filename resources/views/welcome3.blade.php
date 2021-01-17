@@ -131,7 +131,7 @@
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="#">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{('landing-informasi')}}">
                           Dokumen
                         </a>
                       </li>
@@ -246,7 +246,7 @@
             @foreach($ab as $p)
               <div class="col-lg-6 ml-auto">
                 <div class="title_sections mb-0">
-                  <h1>Kegiatan Main Camp</h1>
+                  <h1>Seputar Antasena</h1>
                   <h2>
                   {{ $p->judulab }}
                   </h2>
