@@ -347,132 +347,79 @@
         <!-- <div id="triggerTo"></div> -->
         <!-- End. -->
 
-        <!-- Start Maskot Fiqsi-->
-        <section class="about_agency padding-t-12" id="About">
+        <!-- Start Section Products -->
+        <section class="products_section product_demo2 bg-white margin-b-6">
           <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6 ">
-                <div class="title_sections mb-0">
-                  <!-- <div class="before_title">
-                    <span>Digital Agency</span>
-                    <span class="c-blue">People</span>
-                  </div> -->
-                  <h2>Our Maskot 👋</h2>
-                  <p>
-                    desc maskot
-                  </p>
-                  <!-- start row -->
-                  <div class="row">
-                  <div class="col-sm-6">
-                  <button
-                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
-                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
-                  </button>
-                  </div>
-                  <div class="col-sm-6">
-                  <button
-                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
-                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
-                  </button>
-                  </div>
-                  </div>
-                  <!-- end row -->
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-5">
+                <div class="title_sections_inner margin-b-5">
+                  <h2>Our Maskot</h2>
                 </div>
               </div>
-              <div class="col-lg-4 ml-auto "  data-aos="fade-up" data-aos-delay="0">
-                <!-- <div class="pro_agency"> -->
-                  <img src="{{ asset('landing/fiqsi-maskot.png')}}" style="width:100%; max-width:400px" />
-                <!-- </div> -->
-              </div>
             </div>
-          </div>
-        </section>
-        <!-- Edn. Maskot Fiqsi -->
+            <!-- Start Tabs -->
+            <div class="tabs_works ">
+              <div class="row pt-0">
+                <div class="col-md-8 col-lg-4">
+                  <div class="title_sections margin-b-6">
+                    <h2 class="c-dark">
+                      <!-- System structure is advanced and simple -->
+                    </h2>
+                    <p class="c-gray">
+                      <!-- Duis aute irure dolor in reprehenderit in voluptate
+                      velit esse cillum dolore eu fugiat nulla pariatur. -->
+                    </p>
+                  </div>
 
-        <!-- Start Maskot ISC-->
-        <section class="about_agency padding-t-12" id="About">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6 ">
-                <div class="title_sections mb-0">
-                  <!-- <div class="before_title">
-                    <span>Digital Agency</span>
-                    <span class="c-blue">People</span>
-                  </div> -->
-                  <h2>Our Maskot 👋</h2>
-                  <p>
-                    desc maskot
-                  </p>
-                  <!-- start row -->
-                  <div class="row">
-                  <div class="col-sm-6">
-                  <button
-                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
-                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
-                  </button>
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                      aria-controls="v-pills-home" aria-selected="true">
+                      <h4 class="margin-b-2 font-s-20 c-dark">Client Satisfaction</h4>
+                      <p>
+                        Client Satisfaction is our first priority and We are
+                        best at it .Keep In Touch.
+                      </p>
+                    </a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                      aria-controls="v-pills-profile" aria-selected="false">
+                      <h4 class="margin-b-2 font-s-20 c-dark">UX Planning</h4>
+                      <p>
+                        We provide the best UI/UX Design by following the
+                        latest trends of the market .
+                      </p>
+                    </a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                      aria-controls="v-pills-messages" aria-selected="false">
+                      <h4 class="margin-b-2 font-s-20 c-dark">Cloud Stroage</h4>
+                      <p>
+                        LiteSpeed Web Server known for its high performance.
+                      </p>
+                    </a>
                   </div>
-                  <br>
-                  <div class="col-sm-6">
-                  <button
-                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
-                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
-                  </button>
+                </div>
+                <div class="col-lg-7 ml-auto">
+                  <div class="tab-content img--tabs" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                      aria-labelledby="v-pills-home-tab">
+                      <img class="--img" src="{{ asset('landing/isc-maskot.png')}}" style="width:100%;max-width:400px;" alt="" />
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                      aria-labelledby="v-pills-profile-tab">
+                      <img class="--img" src="{{ asset('landing/fiqsi-maskot-rez.png')}}" style="width:100%;max-width:400px;"  alt="" />
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                      aria-labelledby="v-pills-messages-tab">
+                      <img class="--img" src="{{ asset('landing/osiris-maskot.png')}}"  style="width:100%;max-width:400px;" alt="" />
+                    </div>
                   </div>
-                  </div>
-                  <!-- end row -->
                 </div>
               </div>
-              <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="0">
-                <!-- <div class="pro_agency"> -->
-                  <img src="{{ asset('landing/isc-maskot.png')}}" style="width:100%; max-width:400px" />
-                <!-- </div> -->
-              </div>
             </div>
+            <!-- End Tabs -->
           </div>
+          <!-- .container -->
         </section>
-        <!-- Edn. Maskot ISC -->
-
-        <!-- Start Maskot osiris-->
-        <section class="about_agency padding-t-12" id="About">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-6 ">
-                <div class="title_sections mb-0">
-                  <!-- <div class="before_title">
-                    <span>Digital Agency</span>
-                    <span class="c-blue">People</span>
-                  </div> -->
-                  <h2>Our Maskot 👋</h2>
-                  <p>
-                    desc maskot
-                  </p>
-                  <!-- start row -->
-                  <div class="row">
-                  <div class="col-sm-6">
-                  <button
-                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
-                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
-                  </button>
-                  </div>
-                  <div class="col-sm-6">
-                  <button
-                  class="btn btn_lg_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
-                  <span data-hover=" Tema : Peace and Harmony: From Jogja to Indonesia and Beyond"> Tema : Peace and Harmony: From Jogja to Indonesia and Beyond</span>
-                  </button>
-                  </div>
-                  </div>
-                  <!-- end row -->
-                </div>
-              </div>
-              <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="0">
-                <!-- <div class="pro_agency"> -->
-                  <img src="{{ asset('landing/osiris-maskot.png')}}" style="width:100%; max-width:400px" />
-                <!-- </div> -->
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Edn. Maskot Osiris -->
+        <!-- End Section Products -->
         
         <!-- Start section__stories -->
         <section class="section__stories margin-b-6" id="Stories">
@@ -493,7 +440,7 @@
                     <div class="item">
                       <div class="media">
                         <!-- <div class="ico__top"> -->
-                          <img src="{{asset('storage/'.$p->gambarpart)}}" style="width:100%;">
+                          <img src="{{asset('storage/'.$p->gambarpart)}}" style="width:100%;max-width:100px;">
                             <g id="_03" data-name="03" transform="translate(-5 -2)">
                               <path id="Oval-2" d="M12,19a7,7,0,0,0,7-7q0-3.866-7-10Q5,8.134,5,12A7,7,0,0,0,12,19Z"
                                 fill-rule="evenodd" opacity="0.3"></path>
@@ -502,7 +449,7 @@
                         <!-- </div> -->
                         <div class="media-body">
                           <div class="t_text">
-                            <h3>{{ $p->name }}</h3>
+                            <!-- <h3>{{ $p->name }}</h3> -->
                             <!-- <span>54 Topic</span> -->
                           </div>
                         </div>
