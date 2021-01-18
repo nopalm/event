@@ -9,6 +9,6 @@ class MailController extends Controller
     {
        Mail::to('nopalmdev@gmail.com')->send(new MyTestEmail());
         
-        return redirect('/landing-kontak')->with('success', 'Thanks For contact us');;
+        return redirect('/landing-kontak')->with('success', 'Thanks For contact us');
    }
 }

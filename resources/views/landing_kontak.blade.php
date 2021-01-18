@@ -272,7 +272,7 @@
         </section>
         <!-- End banner_about -->
 
-                <!-- Start section_contact_four -->
+        <!-- Start section_contact_four -->
         <section class="section_contact_five contact_six simplecontact_section margin-t-5 padding-t-7 margin-b-10">
           <div class="container">
             <div class="row">
@@ -302,9 +302,8 @@
                     <i class="tio instagram"></i>
                   </a>
                 </div>
-
-
               </div>
+
               <div class="col-lg-6 ml-auto">
               @if (\Session::has('success'))
                   <div class="alert alert-success">

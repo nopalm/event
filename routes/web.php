@@ -22,7 +22,7 @@ Route::post('/contact', function(Request $request){
 });
 Route::post('/sendmail', function(Request $request){
     Mail::send(new MyTestEmail($request));
-    return redirect('/landing-kontak');
+    return redirect('/landing-kontak')->with('success', 'Thanks For contact us');
 });
 // Route::get('/sendmail','MailController@kirim_email');
 Route::get('/', 'IndexController@index');
