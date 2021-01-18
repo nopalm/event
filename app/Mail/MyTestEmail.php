@@ -35,7 +35,7 @@ class MyTestEmail extends Mailable
     {
         return $this->subject('Email From Contact Us')
                     ->from('nonreply@antasena')
-                    ->to('nopalmdev@gmail.com')
+                    ->to('antasenasmaubp@gmail.com')
                     ->view('emails.myTestMail');
     }
 }

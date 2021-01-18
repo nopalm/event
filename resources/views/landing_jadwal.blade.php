@@ -14,7 +14,7 @@
     content="event antasena,antasena,event" />
   <meta name="author" content="antasena" />
 
-  <title>Isc Page</title>
+  <title>Jadwal Page</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="{{  asset('landing/logo antasena.png')}}" type="image/x-icon" />
   <!-- Bootstrap 4.5 -->
@@ -35,90 +35,174 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <!-- <link rel="stylesheet" href="{{ asset('landing2/assets/dist/css/company.style.css')}}"> -->
-  <style>
-      .rq-icon-list {
-  position: relative;
-  width: 100%;
-}
-.rq-icon-list.primary i {
-  color: #cc3333;
-}
-.rq-icon-list.circle li {
-  padding-left: 45px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.rq-icon-list.circle i {
-  width: 35px;
-  height: 35px;
-  border: 1px solid #999999;
-  line-height: 35px;
-  border-radius: 50%;
-  text-align: center;
-  top: 4px;
-}
-.rq-icon-list.circle.primary i {
-  background: #cc3333;
-  color: #ffffff;
-  border-color: #cc3333;
-}
-.rq-icon-list ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 25px;
-}
-.rq-icon-list ul li {
-  position: relative;
-  padding-left: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #666666;
-}
-.rq-icon-list ul li i {
-  position: absolute;
-  left: 0;
-  top: 6px;
-  font-size: 15px;
-}
-.rq-icon-box-single {
-  position: relative;
-  width: 100%;
-  text-align: center;
-}
-.rq-icon-box-single:hover .rq-icon {
-  box-shadow: 0 0 0 7px rgba(204, 51, 51, 0.2);
-}
-.rq-icon-box-single .rq-icon {
-  width: 100px;
-  height: 100px;
-  /* background: #cc3333; */
-  border-radius: 50%;
-  line-height: 100px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 0 5px rgba(204, 51, 51, 0.2);
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 25px;
-}
-.rq-icon-box-single .rq-icon img {
-  width: 45px;
-  margin: 0 auto;
-}
-/* .rq-icon-box-single h5 {
-  text-transform: uppercase;
-  font-family: "Montserrat-Regular";
-  margin: 0;
-  line-height: 24px;
-} */
-/* .rq-icon-box-single p {
-  font-size: 13px;
-} */
+    <style>
 
-      </style>
+.timeline {
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  background: #C5CAE9;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+.timeline-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: #3F51B5;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+.timeline-card {
+  padding: 0 !important;
+}
+.timeline-card p {
+  padding: 0 20px;
+}
+.timeline-card a {
+  margin-left: 20px;
+}
+
+.timeline-item:nth-child(2) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1458530970867-aaa3700e966d") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(5) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1444093826349-9ce8c622f4f3") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(6) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1471479917193-f00955256257") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(8) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1466840787022-48e0ec048c8a") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(10) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1447639703758-f525f36456bf") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(11) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://hd.unsplash.com/photo-1469429978400-082eec725ad5") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-img-header {
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline-img-header h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+blockquote {
+  margin-top: 30px;
+  color: #757575;
+  border-left-color: #3F51B5;
+  padding: 0 20px;
+}
+
+.date {
+  background: #322f3d;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px;
+  }
+  .timeline .timeline-img {
+    left: 50px;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+}
+
+    </style>
 
   <!-- js for Brwoser -->
   <!--[if lt IE 9]>
@@ -139,7 +223,7 @@
           <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
             <a class="navbar-brand" href="./">
             @foreach($ab as $p)
-              <img src="{{asset('storage/'.$p->logo)}}" style="width:100%; max-width:240px;" alt="logo" />
+            <img src="{{asset('storage/'.$p->logo)}}" style="width:100%;max-width:250px;" alt="" />
             @endforeach
             </a>
 
@@ -159,7 +243,7 @@
                   <a class="nav-link" href="./">Home</a>
                 </li>  
                 <li class="nav-item dropdown dropdown-hover">
-                  <a class="nav-link dropdown-toggle dropdown_menu active" href="#" id="navbarDropdown" role="button"
+                  <a class="nav-link dropdown-toggle dropdown_menu " href="#" id="navbarDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Event
 
@@ -172,7 +256,7 @@
                     <ul class="dropdown_menu_nav">
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between active" href="{{ url('landing-isc')}}">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between " href="{{ url('landing-isc')}}">
                           ISC
                         </a>
                       </li>
@@ -196,7 +280,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#Services">Registrasi</a>
                 </li>
-                <li class="nav-item dropdown dropdown-hover">
+                <li class="nav-item dropdown dropdown-hover active">
                   <a class="nav-link dropdown-toggle dropdown_menu" href="#" id="navbarDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Informasi
@@ -210,7 +294,7 @@
                     <ul class="dropdown_menu_nav">
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-galeri')}}">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between  active" href="{{ url('landing-galeri')}}">
                           Galeri Foto
                         </a>
                       </li>
@@ -254,10 +338,10 @@
             <img class="cover-parallax" src="{{ asset('landing/assets/img/agency/girl.svg')}}" alt="image">
           </div>
           <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-lg-8 ">
+            <div class="row justify-content-center text-center">
+              <div class="col-md-8 col-lg-8">
                 <div class="banner_title_inner">
-<!-- 
+                <!-- 
                   <div class="about_post">
                     <span class="c_ategory">
                       <a href="#Design">Design</a>
@@ -266,16 +350,11 @@
                     <span class="dot"></span>
                     <time>15min</time>
                   </div> -->
-                  @foreach($profile_isc as $p) 
                   <h1 class="margin-my-3 font-s-60" data-aos="fade-up" data-aos-delay="0">
-                   Islamic Scout Competition 2021
+                  Jadwal
                   </h1>
                   <h3 class="margin-my-3 font-s-30" data-aos="fade-up" data-aos-delay="0">
-                  {{$p->tema_prof}}
-                  </h3>
-                  @endforeach
-                  <h3 class="margin-my-3 font-s-20" data-aos="fade-up" data-aos-delay="0">
-                  tanngal
+                  Jadwal Kegiatan
                   </h3>
                 </div>
               </div>
@@ -284,90 +363,21 @@
           </div>
         </section>
         <!-- End banner_about -->
+<section class="timeline margin-t-12 padding-py-10">
+  <div class="container">
+    @foreach($jadwal as $p)
+    <div class="timeline-item">
+      <div class="timeline-img"></div>
+      <div class="timeline-content" data-aos="fade-up" data-aos-delay="0">
+        <h2>{{ $p->juduljadwal}}</h2>
+        <div class="date">{{$p->tanggaljadwal}}</div>
+        <p>{{ $p->deskripsijadwal}}</p>
+      </div>
+    </div>
+    @endforeach
+  </div>
+</section>
 
-        <!-- Start content-Sblog -->
-        <section class="content-Sblog feature_dem3 bg-white" data-sticky-container>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 Oitem margin-b-5">
-                <div class="item_feth">
-                  <div class="media">
-                    <div class="icon_fr" style="background-color: #a97df7;">
-                      <img src="{{  asset('landing/assets/img/icons/Crown.svg')}}" />
-                    </div>
-                    <div class="media-body">
-                      <div class="za_tzt">
-                        <h2>Tentang ISC</h2>
-                        <p>
-                          Islamic Scout Competition
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              @foreach($profile_isc as $p)
-              <div class="col-lg-12">
-                  <p class="margin-my-3">{{ $p->desc_prof}}</p>
-                </div>
-                @endforeach
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End. content-Sblog -->
-        <!-- Start content-daftar lomba -->
-        <section class="content-Sblog" data-sticky-container>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <!-- @foreach($profile_isc as $p)  -->
-                  <center><h2>Daftar Lomba </h2></center>
-                  <!-- <p class="margin-b-3">{{ $p->desc_prof}}</p> -->
-                <!-- @endforeach -->
-                <div id="rq-icon-box-portion" class="element-single wow fadeIn"> <!-- start of Icon Boxes -->
-                      <!-- <h3 class="elements-title">Daftar Lomba</h3> -->
-                      <div class="row">
-					@foreach($isc as $p) 
-					  <div class="col-md-4 col-sm-4">
-                          <div class="rq-icon-box-single">
-                            <div class="rq-icon">
-                              <img src="{{asset('storage/'.$p->gambarisc)}}" style="width:95%;" alt=""/>
-                            </div>
-                            <h5>{{$p->judulisc}}</h5>
-                            <p class="margin-b-3">{{$p->deskripsiisc}}</p>
-                          </div>
-                        </div>
-					@endforeach
-                      </div>
-                    </div> <!-- end of Icon Boxes -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End. content-daftar Lomba -->
-        <section class="contact__workspace margin-t-12 padding-py-10">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
-                <div class="title_sections mb-0">
-                @foreach($profile_isc as $p)
-                  <h2 class="c-white">{{$p->text}}</h2>
-                  <p class="c-white mb-0">{{$p->desc_text}}</p>
-                @endforeach
-                </div>
-              </div>
-              <div class="col-lg-7 mt-4 mt-lg-0 text-lg-right my-lg-auto">
-                <a href="#" class="btn btn_md_primary sweep_top sweep_letter rounded-8 opacity-1">
-                  <div class="inside_item">
-                    <span data-hover="Daftar Sekarang">Daftar Sekarang</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
         <!-- Start dividar -->
         <section class="dividar margin-t-12"></section>
         <!-- End. dividar -->
@@ -386,7 +396,7 @@
           <div class="row">
             <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
               <div class="item_about">
-                <a class="logo" href="./">
+                <a href="./">
                 @foreach($ab as $p)
             <img src="{{asset('storage/'.$p->logo_foot)}}" style="width:100%;max-width:250px;" alt="" />
             @endforeach
@@ -500,7 +510,59 @@
 
   <script src="{{ asset('landing2/assets/dist/js/wow.min.js')}}" type="text/javascript"></script>
     <script src="{{ asset('landing2/assets/dist/js/scripts.js')}}" type="text/javascript"></script>
+    <script>
+        $(function(){
 
+window.sr = ScrollReveal();
+
+if ($(window).width() < 768) {
+
+    if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+        $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+    }
+
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+
+} else {
+    
+    sr.reveal('.js--fadeInLeft', {
+      origin: 'left',
+      distance: '300px',
+        easing: 'ease-in-out',
+      duration: 800,
+    });
+
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+
+}
+
+sr.reveal('.js--fadeInLeft', {
+      origin: 'left',
+      distance: '300px',
+        easing: 'ease-in-out',
+      duration: 800,
+    });
+
+    sr.reveal('.js--fadeInRight', {
+      origin: 'right',
+      distance: '300px',
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+
+
+});
+    </script>
 </body>
 
 </html>

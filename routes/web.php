@@ -33,6 +33,7 @@ Route::get('/landing-fiqsi', 'IndexController@landingFiqsi');
 Route::get('/landing-osiris', 'IndexController@landingOsiris');
 Route::get('/landing-informasi', 'IndexController@landingInformasi');
 Route::get('/landing-galeri', 'IndexController@landingGaleri');
+Route::get('/landing-jadwal', 'IndexController@landingJadwal');
 // Route::get('/download-file/{id}', 'IndexController@downloadFile');
 
 Route::post('/send','IndexController@send');
@@ -52,5 +53,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/profile_osiris', 'ProfileOsirisController');
     Route::resource('/sponsor', 'SponsorController');
     Route::resource('/galeri', 'GaleriController');
+    Route::resource('/jadwal', 'jadwalController');
+
 
 });
