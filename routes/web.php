@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Http\Request;
 use App\Mail\SendMail;
+use App\Mail\MyTestEmail;
 use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,11 @@ Route::post('/contact', function(Request $request){
     Mail::send(new SendMail($request));
     return redirect('/contact');
 });
-
+Route::post('/sendmail', function(Request $request){
+    Mail::send(new MyTestEmail($request));
+    return redirect('/landing-kontak');
+});
+// Route::get('/sendmail','MailController@kirim_email');
 Route::get('/', 'IndexController@index');
 Route::get('/about-us', 'IndexController@landingAbout');
 Route::get('/landing-kontak', 'IndexController@landingKontak');

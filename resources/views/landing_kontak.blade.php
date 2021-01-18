@@ -139,7 +139,7 @@
           <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
             <a class="navbar-brand" href="./">
             @foreach($ab as $p)
-            <img src="{{asset('storage/'.$p->logo_foot)}}" style="width:100%;max-width:250px;" alt="" />
+            <img src="{{asset('storage/'.$p->logo)}}" style="width:100%;max-width:250px;" alt="" />
             @endforeach
             </a>
 
@@ -306,42 +306,48 @@
 
               </div>
               <div class="col-lg-6 ml-auto">
-
+              @if (\Session::has('success'))
+                  <div class="alert alert-success">
+                      <ul>
+                          <li>{!! \Session::get('success') !!}</li>
+                      </ul>
+                  </div>
+              @endif
                 <div class="form_cc_four">
-                  <form action="" class="row">
+                  <form action="{{ url('/sendmail')}}" method="post"  class="row">
+                  {{ csrf_field() }}
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Email address</label>
-                        <input type="email" class="form-control" >
+                        <input type="email" name="email" class="form-control" >
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Name</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="nama" class="form-control">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Phone</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="phone" class="form-control">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>Subject</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="subject" class="form-control">
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Message</label>
-                        <textarea class="form-control" rows="7"
-                          placeholder="Tell us more about your project, needs, and timeline."></textarea>
+                        <textarea class="form-control" name="pesan" rows="7"></textarea>
                       </div>
-                      <a href="./" class="btn btn_md_primary bg-red rounded-8 c-white h-fit-content">
+                      <button type="submit" class="btn btn_md_primary bg-red rounded-8 c-white h-fit-content">
                         Send Message
-                      </a>
+                      </button>
                     </div>
                     
                   </form>
@@ -377,8 +383,8 @@
               <div class="item_about">
                 <a href="./">
                 @foreach($ab as $p)
-            <img src="{{asset('storage/'.$p->logo_foot)}}" style="width:100%;max-width:250px;" alt="" />
-            @endforeach
+                <img src="{{asset('storage/'.$p->logo_foot)}}" style="width:100%;max-width:250px;" alt="" />
+                @endforeach
                 </a>
                 @foreach($ab as $p)
                 <p>

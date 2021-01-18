@@ -8,10 +8,10 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class SendMail extends Mailable
+class MyTestEmail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $email;
+    public $email,$nama,$subject,$pesan,$phone;
     /**
      * Create a new message instance.
      *
@@ -20,6 +20,10 @@ class SendMail extends Mailable
     public function __construct(Request $request)
     {
         $this->email = $request;
+        $this->nama = $request;
+        $this->subject = $request;
+        $this->pesan = $request;
+        $this->phone = $request;
     }
 
     /**
@@ -29,10 +33,10 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('New contact Mail')
-                    ->from('nonreply@ptbrs.co.id')
-                    ->to('nopalmdev@ptbrs.co.id')
-                    ->view('email')->with('success', 'Thanks for contact us!');
-        // return $this->view('view.name');
+        return $this->subject('Email From Contact Us')
+                    ->from('nonreply@antasena')
+                    ->to('nopalmdev@gmail.com')
+                    ->view('emails.myTestMail')
+                    ->with('success', 'Thanks for contact us!');
     }
 }

@@ -104,6 +104,77 @@ class IndexController extends Controller
         return view('landing_kontak',['kontak'=>$kontak,'ab'=>$ab]);
     }
 
+    //  function send(Request $request)
+    // {
+    //  $this->validate($request, [
+    //   'name'     =>  'required',
+    //   'email'  =>  'required|email',
+    //   'message' =>  'required'
+    //  ]);
+
+    //     $data = array(
+    //         'name'      =>  $request->name,
+    //         'message'   =>   $request->message
+    //     );
+
+    //  Mail::to('nopaliki@gmail.com')->send(new SendMail($data));
+    //  return redirect()->back()->with('success', 'Thanks for contacting us!');
+
+    // }
+
+    // function sendMail(Request $request){
+    //     $subject = "Contact dari " . $request->input('name');
+    //     $name = $request->input('name');
+    //     $emailAddress = $request->input('email');
+    //     $message = $request->input('message');
+
+    //     $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+    //     try {
+    //         // Pengaturan Server
+    //        // $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+    //         $mail->isSMTP();                                      // Set mailer to use SMTP
+    //         $mail->Host = 'smtp.gmail.com';                  // Specify main and backup SMTP servers
+    //         $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    //         $mail->Username = 'nopaliki@gmail.com';                 // SMTP username
+    //         $mail->Password = 'naufal6312';                           // SMTP password
+    //         $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+    //         $mail->Port = 465;                                    // TCP port to connect to
+
+    //         // Siapa yang mengirim email
+    //         $mail->setFrom($emailAddress, $name);
+
+    //         // Siapa yang akan menerima email
+    //         $mail->addAddress('nopaliki@gmail.com');     // Add a recipient
+    //         // $mail->addAddress('ellen@example.com');               // Name is optional
+
+    //         // ke siapa akan kita balas emailnya
+    //         $mail->addReplyTo($emailAddress, $name);
+            
+    //         // $mail->addCC('cc@example.com');
+    //         // $mail->addBCC('bcc@example.com');
+
+    //         //Attachments
+    //         // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    //         // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+
+
+    //         //Content
+    //         $mail->isHTML(true);                                  // Set email format to HTML
+    //         $mail->Subject = $subject;
+    //         $mail->Body    = $message;
+    //         $mail->AltBody = $message;
+
+    //         $mail->send();
+
+    //         $request->session()->flash('status', 'Terima kasih, kami sudah menerima email anda.');
+    //         return redirect('./');
+
+    //     } catch (Exception $e) {
+    //         echo 'Message could not be sent.';
+    //         echo 'Mailer Error: ' . $mail->ErrorInfo;
+    //     }
+
+    // }
 
     
 }
