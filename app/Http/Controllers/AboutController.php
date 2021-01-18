@@ -78,13 +78,30 @@ class AboutController extends Controller
          $about->deskripsiab = $request->get('deskripsiab');
          $about->tema = $request->get('tema');
          $about->tanggal = $request->get('tanggal');
+         $about->desc_foot = $request->get('desc_foot');
          if($request->file('gambarab')){     
              if($about->gambarab && file_exists(storage_path('app/public/' . $about->gambarab))){         
              \Storage::delete('public/'.$about->gambarab);     
         }    
          $file = $request->file('gambarab')->store('imageab', 'public');     
          $about->gambarab = $file; 
-        }  
+        }
+        if($request->file('logo')){     
+            if($about->gambarab && file_exists(storage_path('app/public/' . $about->logo))){         
+            \Storage::delete('public/'.$about->logo);     
+       }    
+        $file = $request->file('logo')->store('logo', 'public');     
+        $about->logo = $file; 
+       }
+       
+        if($request->file('logo_foot')){     
+            if($about->gambarab && file_exists(storage_path('app/public/' . $about->logo_foot))){         
+            \Storage::delete('public/'.$about->logo_foot);     
+       }    
+        $file = $request->file('logo_foot')->store('logo_foot', 'public');     
+        $about->logo_foot = $file; 
+       }
+
          $about->save();
          return redirect('/about');
     }

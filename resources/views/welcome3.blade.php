@@ -55,7 +55,9 @@
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
             <a class="navbar-brand" href="./">
-              <img src="{{  asset('landing/web.png')}}" style="width:100%; max-width:240px;" alt="logo" />
+            @foreach($ab as $p)
+              <img src="{{asset('storage/'.$p->logo)}}" style="width:100%; max-width:240px;" alt="logo" />
+            @endforeach
             </a>
 
             <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
@@ -94,13 +96,13 @@
 
                       <li class="dropdown-submenu dropdown-hover"><a
                           class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-fiqsi')}}">
-                          Fiqsi
+                          FIQSI
                         </a>
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
                           class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-osiris')}}">
-                          Osiris
+                          OSIRIS
                         </a>
                       </li>
 
@@ -376,30 +378,30 @@
                   @foreach($profile_isc as $p)
                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
                       aria-controls="v-pills-home" aria-selected="true">
-                      <h4 class="margin-b-2 font-s-20 c-dark">Isc</h4>
+                      <h4 class="margin-b-2 font-s-20 c-dark">ISC</h4>
                       <p>
-                      Tema :  {{ $p-> tema_maskot}}  <br>
-                      Slogan : {{ $p-> slogan_maskot}}
+                      Nama :  {{ $p-> tema_maskot}}  <br>
+                      Deskripsi : {{ $p-> slogan_maskot}}
                       </p>
                     </a>
                   @endforeach
                   @foreach($profile_fiqsi as $p)
                     <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
                       aria-controls="v-pills-profile" aria-selected="false">
-                      <h4 class="margin-b-2 font-s-20 c-dark">Fiqsi</h4>
+                      <h4 class="margin-b-2 font-s-20 c-dark">FIQSI</h4>
                       <p>
-                      Tema :  {{ $p-> tema_maskot}} <br>
-                      Slogan : {{ $p-> slogan_maskot}}
+                      Nama :  {{ $p-> tema_maskot}} <br>
+                      Deskripsi : {{ $p-> slogan_maskot}}
                       </p>
                     </a>
                   @endforeach
                   @foreach($profile_fiqsi as $p)
                     <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
                       aria-controls="v-pills-messages" aria-selected="false">
-                      <h4 class="margin-b-2 font-s-20 c-dark">Osiris</h4>
+                      <h4 class="margin-b-2 font-s-20 c-dark">OSIRIS</h4>
                       <p>
-                      Tema : {{ $p-> tema_maskot}} <br>
-                      Slogan : {{ $p-> slogan_maskot}}
+                      Nama : {{ $p-> tema_maskot}} <br>
+                      Deskripsi : {{ $p-> slogan_maskot}}
                       </p>
                     </a>
                   @endforeach
@@ -490,20 +492,21 @@
         <div class="defalut-footer">
           <div class="row">
             <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
+              @foreach($ab as $p)
               <div class="item_about">
-                <a class="logo" href="hosting.html">
-                  <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:250px;" alt="" />
+                <a class="logo" href="./">
+                  <img src="{{asset('storage/'.$p->logo_foot)}}" style="width:100%;max-width:250px;" alt="" />
                 </a>
-                @foreach($ab as $p)
                 <p>
                 {{ $p->deskripsiab}}
                 </p>
-                @endforeach
+                
                 <div class="address">
                   <!-- <span>1989 Don Jackson Lane</span>
                   <span>Call us:
                     <a class="c-red" href="tel:8089569599">808-956-9599</a></span> -->
                 </div>
+                @endforeach
               </div>
             </div>
             <div class="col-lg-4 col-md-2">
@@ -522,7 +525,10 @@
                     @foreach($kontak as $p) 
                     <p class="nav-link"><i class="material-icons">location_on</i>{{$p->alamat}}</p>
                     <p class="nav-link"><i class="material-icons">mail</i>{{$p->email}}</p>
-                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}}</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}} (Kantor)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_isc}} (ISC)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_fiqsi}} (FIQSI)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_osiris}} (OSIRIS)</p>
                     @endforeach
                 </div>     
             </div>

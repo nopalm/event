@@ -21,6 +21,24 @@
                     <input id="name" type="text" name="phone" value="{{ $p->phone }}">
                     <label for="name">Input Phone Number</label>
                 </div>
+
+                <h4 class="card-title">Phone ISC</h4>
+                <div class="input-field">
+                    <input id="name" type="text" name="phone_isc" value="{{ $p->phone_isc }}">
+                    <label for="name">Input Phone Number</label>
+                </div>
+
+                <h4 class="card-title">Phone FIQSI</h4>
+                <div class="input-field">
+                    <input id="name" type="text" name="phone_fiqsi" value="{{ $p->phone_fiqsi }}">
+                    <label for="name">Input Phone Number</label>
+                </div>
+
+                <h4 class="card-title">Phone OSIRIS</h4>
+                <div class="input-field">
+                    <input id="name" type="text" name="phone_osiris" value="{{ $p->phone_osiris }}">
+                    <label for="name">Input Phone Number</label>
+                </div>
                 
                 <h4 class="card-title">Alamat</h4>
                 <div class="input-field">

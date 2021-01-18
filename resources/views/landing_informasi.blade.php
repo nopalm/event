@@ -138,7 +138,9 @@
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
             <a class="navbar-brand" href="./">
-              <img src="{{  asset('landing/web.png')}}" style="width:100%; max-width:250px;" alt="logo" />
+            @foreach($ab as $p)
+              <img src="{{asset('storage/'.$p->logo)}}" style="width:100%; max-width:240px;" alt="logo" />
+            @endforeach
             </a>
 
             <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
@@ -177,13 +179,13 @@
 
                       <li class="dropdown-submenu dropdown-hover"><a
                           class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-fiqsi')}}">
-                          Fiqsi
+                          FIQSI
                         </a>
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
                           class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-osiris')}}">
-                          Osiris
+                          OSIRIS
                         </a>
                       </li>
 
@@ -252,7 +254,7 @@
             <img class="cover-parallax" src="{{ asset('landing/assets/img/agency/girl.svg')}}" alt="image">
           </div>
           <div class="container">
-            <div class="row">
+            <div class="row justify-content-center text-center">
               <div class="col-md-8 col-lg-8">
                 <div class="banner_title_inner">
                 <!-- 
@@ -428,7 +430,9 @@
             <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
               <div class="item_about">
                 <a href="./">
-                  <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:250px;" alt="" />
+                @foreach($ab as $p)
+            <img src="{{asset('storage/'.$p->logo_foot)}}" style="width:100%;max-width:250px;" alt="" />
+            @endforeach
                 </a>
                 @foreach($ab as $p)
                 <p>
@@ -458,7 +462,10 @@
                     @foreach($kontak as $p) 
                     <p class="nav-link"><i class="material-icons">location_on</i>{{$p->alamat}}</p>
                     <p class="nav-link"><i class="material-icons">mail</i>{{$p->email}}</p>
-                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}}</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}} (Kantor)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_isc}}(ISC)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_fiqsi}}(FIQSI)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_osiris}}(OSIRIS)</p>
                     @endforeach
                 </div>     
             </div>

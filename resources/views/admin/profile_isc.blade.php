@@ -51,7 +51,7 @@
                     <label for="textarea2">Berkas Peserta</label>
                 </div> 
                 <br>
-                Current Image: <br>     
+                Logo Isc: <br>     
                 @if($p->gambar_prof)       
                 <img src="{{asset('storage/'.$p->gambar_prof)}}" width="120px" />
                        <br>
@@ -62,22 +62,21 @@
                  <small  class="text-muted">Kosongkan jika tidak ingin mengubah foto</small> <br>                
                 <!-- <div class="divider"></div> -->
                 <br>
-
-                <h4 class="card-title">Tema Maskot</h4>
+                <h4 class="card-title">Nama Maskot</h4>
                 <div class="input-field col s12">
                     <textarea id="textarea2" name="tema_maskot" class="materialize-textarea"
                         data-length="1000">{{ $p->tema_maskot}}</textarea>
-                    <label for="textarea2">Tema Maskot</label>
+                    <label for="textarea2">Nama Maskot</label>
                 </div> 
                 <br>
-                <h4 class="card-title">Slogan Maskot</h4>
+                <h4 class="card-title">Deskripsi Maskot</h4>
                 <div class="input-field col s12">
                     <textarea id="textarea2" name="slogan_maskot" class="materialize-textarea"
                         data-length="1000">{{ $p->slogan_maskot}}</textarea>
-                    <label for="textarea2">Sogan Maskot</label>
+                    <label for="textarea2">Deskripsi Maskot</label>
                 </div> 
                 <br>
-                Current Maskot Image: <br>     
+                Gambar Maskot: <br>     
                 @if($p->maskot)       
                 <img src="{{asset('storage/'.$p->maskot)}}" width="120px" />
                        <br>
@@ -85,7 +84,24 @@
                 No avatar     
                 @endif     <br>     
                 <input id="avatar" name="maskot" type="file" class="form-control"> <br>
-                 <small  class="text-muted">Kosongkan jika tidak ingin mengubah foto</small> <br>                
+                 <small  class="text-muted">Kosongkan jika tidak ingin mengubah foto</small> <br>    
+                 <br>
+                <h4 class="card-title">Input Text</h4>
+                <div class="input-field col s12">
+                    <textarea id="textarea2" name="text" class="materialize-textarea"
+                        data-length="1000">{{ $p->text}}</textarea>
+                    <label for="textarea2">Input Text</label>
+                </div> 
+                <br>
+                <br>
+                <h4 class="card-title">Input Deskripsi Text</h4>
+                <div class="input-field col s12">
+                    <textarea id="textarea2" name="desc_text" class="materialize-textarea"
+                        data-length="1000">{{ $p->desc_text}}</textarea>
+                    <label for="textarea2">Input Deskripsi Text</label>
+                </div> 
+                <br>
+                             
                 <div class="divider"></div>
                 <div class="card-content">
                     <!-- <a href="{{ route('about.edit',$p->id)}}">

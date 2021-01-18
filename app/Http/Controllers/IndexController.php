@@ -92,7 +92,7 @@ class IndexController extends Controller
     }
 
     public function landingGaleri(){
-        $galeri = Galeri::all();
+        $galeri = Galeri::paginate(8);
         $ab = About::all();
         $kontak = Kontak::all();
         return view('landing_galeri',['galeri'=>$galeri,'kontak'=>$kontak,'ab'=>$ab]);

@@ -138,7 +138,9 @@
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
             <a class="navbar-brand" href="./">
-              <img src="{{  asset('landing/web.png')}}" style="width:100%; max-width:250px;" alt="logo" />
+            @foreach($ab as $p)
+              <img src="{{asset('storage/'.$p->logo)}}" style="width:100%; max-width:240px;" alt="logo" />
+            @endforeach
             </a>
 
             <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
@@ -177,13 +179,13 @@
 
                       <li class="dropdown-submenu dropdown-hover"><a
                           class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between " href="{{ url('landing-fiqsi')}}">
-                          Fiqsi
+                          FIQSI
                         </a>
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
                           class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between active" href="{{ url('landing-osiris')}}">
-                          Osiris
+                          OSIRIS
                         </a>
                       </li>
 
@@ -284,12 +286,29 @@
         <!-- End banner_about -->
 
         <!-- Start content-Sblog -->
-        <section class="content-Sblog" data-sticky-container>
+        <section class="content-Sblog feature_dem3 bg-white" data-sticky-container>
           <div class="container">
             <div class="row">
+              
+            <div class="col-md-12 Oitem margin-b-5">
+                <div class="item_feth">
+                  <div class="media">
+                    <div class="icon_fr" style="background-color: #a97df7;">
+                      <img src="{{  asset('landing/assets/img/icons/Crown.svg')}}" />
+                    </div>
+                    <div class="media-body">
+                      <div class="za_tzt">
+                        <h2>Tentang Osiris</h2>
+                        <p>
+                          Olimpiade Sains Remaja Indonesia
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="col-lg-12">
-                @foreach($profile_osiris as $p) 
-                  <h2>Tentang osiris </h2>
+                @foreach($profile_osiris as $p)
                   <p class="margin-b-3">{{ $p->desc_prof}}</p>
                 @endforeach
                  
@@ -332,9 +351,10 @@
             <div class="row">
               <div class="col-lg-5">
                 <div class="title_sections mb-0">
-                  <h2 class="c-white">Siapkan Kontingenmu</h2>
-                  <p class="c-white mb-0">Kwarcab se-Jawatimur, Kwarda se-Indonesia, dan National Scout Organization
-                  </p>
+                @foreach($profile_osiris as $p)
+                  <h2 class="c-white">{{$p->text}}</h2>
+                  <p class="c-white mb-0">{{$p->desc_text}}</p>
+                @endforeach
                 </div>
               </div>
               <div class="col-lg-7 mt-4 mt-lg-0 text-lg-right my-lg-auto">
@@ -366,7 +386,9 @@
             <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
               <div class="item_about">
                 <a  href="./">
-                  <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:250px;" alt="" />
+                @foreach($ab as $p)
+            <img src="{{asset('storage/'.$p->logo_foot)}}" style="width:100%;max-width:250px;" alt="" />
+            @endforeach
                 </a>
                 @foreach($ab as $p)
                 <p>
@@ -396,7 +418,10 @@
                     @foreach($kontak as $p) 
                     <p class="nav-link"><i class="material-icons">location_on</i>{{$p->alamat}}</p>
                     <p class="nav-link"><i class="material-icons">mail</i>{{$p->email}}</p>
-                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}}</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}} (Kantor)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_isc}}(ISC)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_fiqsi}}(FIQSI)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_osiris}}(OSIRIS)</p>
                     @endforeach
                 </div>     
             </div>

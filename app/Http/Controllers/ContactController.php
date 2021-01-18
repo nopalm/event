@@ -75,6 +75,9 @@ class ContactController extends Controller
         $this->validate($request,[
             'email' => 'required',
             'phone' => 'required',
+            'phone_isc' => 'required',
+            'phone_fiqsi' => 'required',
+            'phone_osiris' => 'required',
             'alamat' => 'required',
             'wa' => 'required',
             'ig' => 'required'
@@ -83,6 +86,9 @@ class ContactController extends Controller
          $kontak = Kontak::find($id);
          $kontak->email = $request->email;
          $kontak->phone = $request->phone;
+         $kontak->phone_isc = $request->phone_isc;
+         $kontak->phone_fiqsi = $request->phone_fiqsi;
+         $kontak->phone_osiris = $request->phone_osiris;
          $kontak->alamat = $request->alamat;
          $kontak->wa = $request->wa;
          $kontak->ig = $request->ig;

@@ -138,7 +138,9 @@
           <!-- navbar -->
           <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
             <a class="navbar-brand" href="./">
-              <img src="{{  asset('landing/web.png')}}" style="width:100%; max-width:250px;" alt="logo" />
+            @foreach($ab as $p)
+            <img src="{{asset('storage/'.$p->logo)}}" style="width:100%;max-width:250px;" alt="" />
+            @endforeach
             </a>
 
             <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
@@ -177,13 +179,13 @@
 
                       <li class="dropdown-submenu dropdown-hover"><a
                           class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-fiqsi')}}">
-                          Fiqsi
+                          FIQSI
                         </a>
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
                           class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-osiris')}}">
-                          Osiris
+                          OSIRIS
                         </a>
                       </li>
 
@@ -208,13 +210,13 @@
                     <ul class="dropdown_menu_nav">
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-galeri')}}">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between  active" href="{{ url('landing-galeri')}}">
                           Galeri Foto
                         </a>
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between active" href="{{ url('landing-informasi')}}">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-informasi')}}">
                           Dokumen
                         </a>
                       </li>
@@ -252,7 +254,7 @@
             <img class="cover-parallax" src="{{ asset('landing/assets/img/agency/girl.svg')}}" alt="image">
           </div>
           <div class="container">
-            <div class="row">
+            <div class="row justify-content-center text-center">
               <div class="col-md-8 col-lg-8">
                 <div class="banner_title_inner">
                 <!-- 
@@ -288,7 +290,7 @@
               </div>
             </div>
             <div class="row">
-            @foreach($galeri as $p) 
+              @foreach($galeri as $p) 
               <div class="col-lg-3">
                 <div class="item_group">
                   <div class="image_ps">
@@ -306,12 +308,29 @@
                     </a>
                   </div> -->
                   <div class="content_txt">
-                    <h3>{{$p->judulisc}}</h3>
+                    <h3>{{$p->judulgaleri}}</h3>
                   </div>
                 </div>
               </div>
               @endforeach
             </div>
+          <div class="row justify-content-center text-center">
+            <nav aria-label="Page navigation example ">
+              <ul class="pagination default hover-blue margin-t-3">
+                <!-- <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <i class="tio chevron_left"></i>
+                  </a>
+                </li> -->
+                <li>{{ $galeri->links() }}</li>
+                <!-- <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <i class="tio chevron_right"></i>
+                  </a>
+                </li> -->
+              </ul>
+            </nav>
+          </div>
           </div>
         </section>
         <!-- End. team_overlay_style -->
@@ -348,7 +367,9 @@
             <div class="col-md-4 col-lg-4 mb-4 mb-sm-0">
               <div class="item_about">
                 <a href="./">
-                  <img src="{{  asset('landing/web.png')}}" style="width:100%;max-width:250px;" alt="" />
+                @foreach($ab as $p)
+            <img src="{{asset('storage/'.$p->logo_foot)}}" style="width:100%;max-width:250px;" alt="" />
+            @endforeach
                 </a>
                 @foreach($ab as $p)
                 <p>
@@ -378,7 +399,10 @@
                     @foreach($kontak as $p) 
                     <p class="nav-link"><i class="material-icons">location_on</i>{{$p->alamat}}</p>
                     <p class="nav-link"><i class="material-icons">mail</i>{{$p->email}}</p>
-                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}}</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone}} (Kantor)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_isc}}(ISC)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_fiqsi}}(FIQSI)</p>
+                    <p class="nav-link"><i class="material-icons">phone</i>{{$p->phone_osiris}}(OSIRIS)</p>
                     @endforeach
                 </div>     
             </div>
