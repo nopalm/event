@@ -111,6 +111,15 @@ class IndexController extends Controller
         $kontak = Kontak::all();
         return view('landing_jadwal',['jadwal'=>$jadwal,'kontak'=>$kontak,'ab'=>$ab]);
     }
+
+    public function landingRegistrasi(){
+        $profile_fiqsi = ProfileFiqsi::all();
+        $profile_osiris = ProfileOsiris::all();
+        $profile_isc = ProfileIsc::all();
+        $ab = About::all();
+        $kontak = Kontak::all();
+        return view('landing_registrasi',['profile_isc'=>$profile_isc,'profile_osiris'=>$profile_osiris,'profile_fiqsi'=>$profile_fiqsi,'kontak'=>$kontak,'ab'=>$ab]);
+    }
     
 }
 

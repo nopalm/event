@@ -34,6 +34,7 @@ Route::get('/landing-osiris', 'IndexController@landingOsiris');
 Route::get('/landing-informasi', 'IndexController@landingInformasi');
 Route::get('/landing-galeri', 'IndexController@landingGaleri');
 Route::get('/landing-jadwal', 'IndexController@landingJadwal');
+Route::get('/landing-registrasi', 'IndexController@landingRegistrasi');
 // Route::get('/download-file/{id}', 'IndexController@downloadFile');
 
 Route::post('/send','IndexController@send');

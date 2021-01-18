@@ -193,7 +193,7 @@
 
                   </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="{{ url('landing-registrasi')}}">Registrasi</a>
                 </li>
                 <li class="nav-item dropdown dropdown-hover active">
@@ -216,7 +216,7 @@
                       </li>
 
                       <li class="dropdown-submenu dropdown-hover"><a
-                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between active" href="{{ url('landing-informasi')}}">
+                          class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="{{ url('landing-informasi')}}">
                           Dokumen
                         </a>
                       </li>
@@ -267,10 +267,10 @@
                     <time>15min</time>
                   </div> -->
                   <h1 class="margin-my-3 font-s-60" data-aos="fade-up" data-aos-delay="0">
-                   Dokumen
+                   Registrasi
                   </h1>
                   <h3 class="margin-my-3 font-s-30" data-aos="fade-up" data-aos-delay="0">
-                  Dokumen peserta
+                  Registrasi peserta
                   </h3>
                 </div>
               </div>
@@ -300,7 +300,7 @@
             <div class="row justify-content-center text-center">
               <div class="col-lg-5">
                 <div class="title_sections_inner margin-b-5">
-                  <h2>Dokumen</h2>
+                  <h2>Registrasi</h2>
                 </div>
               </div>
             </div>
@@ -370,9 +370,9 @@
                 <h2 class="text-center">Isc</h2>
                 @foreach($profile_isc as $p)
                 <!-- <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%;max-width:350px;"/> -->
-                <center><a href="{{$p->berkas}}" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                <center><a href="{{$p->g_form}}" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
                   <div class="inside_item">
-                    <span data-hover="Berkas Peserta">Berkas Peserta</span>
+                    <span data-hover="Daftar Sekarang">Daftar Sekarang</span>
                   </div>
                 </a></center>
                 @endforeach
@@ -383,9 +383,9 @@
                 <h2 class="text-center">Fiqsi</h2>
                 @foreach($profile_fiqsi as $p)
                 <!-- <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%;max-width:350px;" /> -->
-                <center><a href="{{$p->berkas}}" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4" >
+                <center><a href="{{$p->g_form}}" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4" >
                   <div class="inside_item">
-                    <span data-hover="Berkas Peserta">Berkas Peserta</span>
+                    <span data-hover="Daftar Sekarang">Daftar Sekarang</span>
                   </div>
                 </a></center>
                 @endforeach
@@ -397,9 +397,9 @@
                 <h2 class="text-center">Osiris</h2>
                 @foreach($profile_osiris as $p)
                 <!-- <img class="img-fluid ill_sec" src="{{asset('storage/'.$p->gambar_prof)}}" style="width:100%;max-width:350px;" /> -->
-                <center><a href="{{$p->berkas}}" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
+                <center><a href="{{$p->g_form}}" class="btn btn_md_primary border-0 sweep_letter sweep_top bg-green2 c-white rounded-4">
                   <div class="inside_item">
-                    <span data-hover="Berkas Peserta">Berkas Peserta</span>
+                    <span data-hover="Daftar Sekarang">Daftar Sekarang</span>
                   </div>
                 </a></center>
                 @endforeach

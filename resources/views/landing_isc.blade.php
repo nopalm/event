@@ -194,7 +194,7 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Services">Registrasi</a>
+                  <a class="nav-link" href="{{ url('landing-registrasi')}}">Registrasi</a>
                 </li>
                 <li class="nav-item dropdown dropdown-hover">
                   <a class="nav-link dropdown-toggle dropdown_menu" href="#" id="navbarDropdown" role="button"
